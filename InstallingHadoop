@@ -4,4 +4,79 @@
 #Install ssh using 'sudo apt-get install openssh-server openssh-client
 #Create keys for your local machine using 'ssh-keygen -t rsa'
 #Copy the keys to the authorized keys using 'cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+#Verify Java has been installed using ' java -version'
+
+#Download  hadoop from official website 'https://archive.apache.org/dist/hadoop/common/' version 2.8.5 reccomended for EnhanceIT
+#Extact in desired folder /home/opt/ extract using:
+tar -xzvf hadoop-2.8.5.tar.gz
+
+#Update .bash-profile using nano. Modify the first line to ensure that the correct hadoop folder is chosen
+export HADOOP_HOME=/home/opt/hadoop-2.8.5 
+##########################################################################################################
+export HADOOP_INSTALL=$HADOOP_HOME
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+
+#Source the .bash_profile to have them in effect.
+source .bash_profile
+
+#Update the 'hadoop-env.sh' inside the hadoop directory and add the following lines
+#Ensure this is correctto ensure hadooop can locate the java dependencies
+export JAVA_HOME=/home/opt/hadoop-2.8.5
+export HADOOP_CONF_DIR=${HADOOP_CONF_DIR:-"/home/opt/hadoop-2.8.5/etc/hadoop"} 
+
+#Add the following lines to ' core-site.xml' within the hadoop dir
+<configuration>
+<property>
+<name>fs.defaultFS</name>
+<value>hdfs://localhost:9000</value>
+</property>
+<property>
+<name>hadoop.tmp.dir</name>
+<value>/home/hadoop/hadooptmpdata</value>
+</property>
+</configuration>
+
+#Create dir under hadoop home folder 
+mkdir hadooptmpdata
+
+#Add the following lines to ' hdfs-site.xml' within the hadoop dir
+<configuration>
+<property>
+<name>dfs.replication</name>
+<value>1</value>
+<name>dfs.name.dir</name>
+<value>file:///home/hadoop/hdfs/namenode</value>
+<name>dfs.data.dir</name>
+<value>file:///home/hadoop/hdfs/datanode</value>
+</property>
+</configuration>
+
+#Create dir under hdfs
+mkdir -p hdfs/namenode
+mkdir -p hdfs/datanode
+
+#copy mapred-site.xml to mapred-site.xml.template using cp command
+cp mapred-site.xml.template mapred-site.xml
+
+#Add the following lines to ' mapred-site.xml' within the hadoop dir
+<configuration>
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+</configuration>
+
+#Update 'yarn-side.xml' 
+<property>
+<name>mapreduceyarn.nodemanager.aux-services</name>
+<value>mapreduce_shuffle</value>
+</property>
+</configuration>
+
 
