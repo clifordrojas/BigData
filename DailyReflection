@@ -1,6 +1,6 @@
 #Cliford Rojas
 #EnhanceIT
-#01/24/2020
+#01/27/2020
 
 Completed:
 	Instruction for Github and using git 
@@ -10,11 +10,11 @@ Completed:
 	Python 3
 	Scala 
 	sbt
-	node cluster 
+	node cluster
+	Python (Map Reduce) with CSV file 
 Todo:
-	Python (Map Reduce) needs CSV
 	Python list,object,find smallest pos int, remove duplicated
-		sql commands
+	sql commands
 	Publisher/ Consumer
 Learned:
 	Git commands and set up
