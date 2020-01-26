@@ -3,7 +3,7 @@ git config --global user.name "Cliford R."
 git config --global user.email "cliffordrojas@gmail.com"
 
 #Clone the github repository 
-git clone --bare https://github.com/clifordrojas/BigData.git
+git clone https://github.com/clifordrojas/BigData.git
 
 #Checkout the repository
 git checkout master
