@@ -12,13 +12,15 @@ Completed:
 	sbt
 	node cluster
 	Python (Map Reduce) with CSV file 
-Todo:
 	Python list,object,find smallest pos int, remove duplicated
-	sql commands
 	Publisher/ Consumer
+
+Todo:
+	sql commands
 Learned:
-	Git commands and set up
-	Hadoop core 
-	Importance of SSH
+	Using git clone --bare is incorrect and leaders to issues with more than one server.
+	Netcat has many uses but the communication is insecure.
+	git checkout master reverts the previous commit
+	
 	
 	
