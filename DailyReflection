@@ -14,9 +14,10 @@ Completed:
 	Python (Map Reduce) with CSV file 
 	Python list,object,find smallest pos int, remove duplicated
 	Publisher/ Consumer
-
-Todo:
 	sql commands
+Todo:
+
+
 Learned:
 	Using git clone --bare is incorrect and leaders to issues with more than one server.
 	Netcat has many uses but the communication is insecure.
