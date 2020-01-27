@@ -3,25 +3,12 @@
 #01/27/2020
 
 Completed:
-	Instruction for Github and using git 
-	Instruction for Hadoop Install
-	Ubuntu server 
-	Java 8
-	Python 3
-	Scala 
-	sbt
-	node cluster
-	Python (Map Reduce) with CSV file 
-	Python list,object,find smallest pos int, remove duplicated
-	Publisher/ Consumer
-	sql commands
-Todo:
 
+Todo:
+	Bash Automation (Run every hour) choose whatever you want
 
 Learned:
-	Using git clone --bare is incorrect and leaders to issues with more than one server.
-	Netcat has many uses but the communication is insecure.
-	git checkout master reverts the previous commit
 	Learned to send files via ssh scp blackFile 172.168.20.250:blankFile	
 	Learned cat displays without modifying the file	
+	Learned abou HDFS and High Availability
 	

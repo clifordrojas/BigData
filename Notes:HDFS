@@ -8,4 +8,17 @@ Availability
 Partition
 
 Masternode is the the Name Node and the children is the Data Nodes.
+Name node writes to local disk and NFS(NameNode File Sys). edit.log is update evertime name node changes hdd->->edit.log There also an image 
+in case the primary name node fails 
+
+								Resource manager - Yarn
+Using HDFS
+UI (Ambari)
+CUI 
+HTTP / HDFS Proxies
+Java (Interface run Jar files or directly from code execusion)
+	Client mode  -testing purpose
+	Cluster mdoe -deployment - automation 
+NFS
+
 
