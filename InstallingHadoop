@@ -38,7 +38,7 @@ export HADOOP_CONF_DIR=${HADOOP_CONF_DIR:-"/home/opt/hadoop-2.8.5/etc/hadoop"}
 </property>
 <property>
 <name>hadoop.tmp.dir</name>
-<value>/home/hadoop/hadooptmpdata</value>
+<value>/home/opt/hadoop-2.8.5/etc/hadoop/hadooptmpdata</value>
 </property>
 </configuration>
 
@@ -51,9 +51,9 @@ mkdir hadooptmpdata
 <name>dfs.replication</name>
 <value>1</value>
 <name>dfs.name.dir</name>
-<value>file:///home/hadoop/hdfs/namenode</value>
+<value>file:///home/opt/hadoop-2.8.5/etc/hadoop/hdfs/namenode</value>
 <name>dfs.data.dir</name>
-<value>file:///home/hadoop/hdfs/datanode</value>
+<value>file:///home/opt/hadoop-2.8.5/etc/hadoop/hdfs/datanode</value>
 </property>
 </configuration>
 
