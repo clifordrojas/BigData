@@ -11,4 +11,5 @@ Learned:
 	Learned to send files via ssh scp blackFile 172.168.20.250:blankFile	
 	Learned cat displays without modifying the file	
 	Learned abou HDFS and High Availability
+	Learned about flume and the process to set up
 	
