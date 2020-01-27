@@ -80,3 +80,6 @@ cp mapred-site.xml.template mapred-site.xml
 </configuration>
 
 
+#start hadoop cluster
+hdfs namenode -format
+
