@@ -82,4 +82,11 @@ cp mapred-site.xml.template mapred-site.xml
 
 #start hadoop cluster
 hdfs namenode -format
+#Start hdfs 
+start-dfs.sh
+#Start yarn
+start-yarn.sh
 
+
+#If any permission errors arise allow hadoop permission for users
+ sudo chmod -R 777 hadoop-2.8.5
