@@ -1,0 +1,13 @@
+This will be my notes to manage my scala code.
+1) Create directory first
+2) Create a project 
+	sbt new scala/hello-world.g8 #Creates a simple project
+	name the application
+3) Run the code by:
+	a) Enter the project dir example "hello-world"
+	b) Enter "sbt" to run sbt
+4) Modify the code by:
+	a) Enter the dir src/main/scala/Main.scala
+	b) Edit with notepad/nano
+	c) Do step 3
+

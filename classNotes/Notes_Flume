@@ -1,0 +1,22 @@
+Flume (More fun with data streaming)
+OAuth2 - python request and pull data from server
+
+Starting Flume:
+	Make sure hadoop is running to start flume
+
+One of the ways flume is used is for log aggregation
+Ingestion Method:
+	Data flow/archetecture is very important so request if necessary
+	Web Server -> source -> channel -> sink -> HBase
+			*	*	     *
+	* means things you need to configure
+	Source - where does it come from.
+		Source types:
+			Spooling dir
+			Avro, Kafka, Exec, Thrift 
+			Netcat..etc
+	channel - How data is transferred (buffer in mem or file)
+	sink - Where it's going. Can be organized to group. Can only connect
+		to one channel. 
+	
+Go to apache.org flume userGuide

@@ -1,0 +1,12 @@
+#Shebang
+
+#If I wanted to automate the execution oof a python file
+_(time,...etc)
+
+#Airflow for automation
+
+Use unix commands
+
+python3 pyfile.py args
+
+use sed for file edits
