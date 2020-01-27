@@ -6,7 +6,7 @@ Completed:
 	-Bash Automation run for 3 hours for Jan 27 at 4pm,5pm,6pm
 Todo:
 	-Group automation of Hadoop
-
+	-Install Flume
 Learned:
 	-Learned to send files via ssh scp blackFile 172.168.20.250:blankFile	
 	-Learned cat displays without modifying the file	
