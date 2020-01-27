@@ -1,12 +1,13 @@
-
-
-file = open("testScript.txt", "w+")
-counter = 0
-for x in file:
-    counter = x
-if file.readline() == "":
-    print("Empty")
+file = open("testScript.txt", "r+")
+counter = 1
+line = file.readlines()
+if len(line) == 0:
+    print("No value, add value")
+    file.write(str(counter)+"\n")
 else:
-    file.writelines(counter)
-    print("Note empty: Adding")
+    print("Last value is:\t",line[-1])
+    counter = int(line[-1]) + 1
+    file.write(str(counter) + "\n")
+
+print(line)
 file.close()
