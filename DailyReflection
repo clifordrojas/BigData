@@ -22,6 +22,6 @@ Learned:
 	Using git clone --bare is incorrect and leaders to issues with more than one server.
 	Netcat has many uses but the communication is insecure.
 	git checkout master reverts the previous commit
-	
-	
+	Learned to send files via ssh scp blackFile 172.168.20.250:blankFile	
+	Learned cat displays without modifying the file	
 	
