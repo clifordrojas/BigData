@@ -6,6 +6,7 @@ Completed:
 	-Bash Automation run for 3 hours for Jan 27 at 4pm,5pm,6pm
 	-Fixed hadoop datanode error
 	-Installed Flume
+	-Task 9 Completed
 Todo:
 	-Learn DAG Directed Acyclic Graph
 	-Group automation of Hadoop
@@ -13,4 +14,5 @@ Learned:
 	-Learned how to use crontab to automate a simple process every minute
 	-Flume install
 	-YARN fits in
+	-Scala Code (Objects,methods,functions, return functions,List,ListBuf)
 
