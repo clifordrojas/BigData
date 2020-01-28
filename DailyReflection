@@ -4,12 +4,12 @@
 
 Completed:
 	-Bash Automation run for 3 hours for Jan 27 at 4pm,5pm,6pm
+	-Fixed hadoop datanode error
+	-Installed Flume
 Todo:
 	-Group automation of Hadoop
-	-Install Flume
 Learned:
-	-Learned to send files via ssh scp blackFile 172.168.20.250:blankFile	
-	-Learned cat displays without modifying the file	
-	-Learned abou HDFS and High Availability
-	-Learned about flume and the process to set up
 	-Learned how to use crontab to automate a simple process every minute
+	-Flume install
+	-YARN fits in
+

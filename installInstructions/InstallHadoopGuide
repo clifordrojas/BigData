@@ -91,3 +91,6 @@ start-yarn.sh
 
 #If any permission errors arise allow hadoop permission for users
  sudo chmod -R 777 hadoop-2.8.5
+
+#Check the logs
+home/opt/hadoop-2.8.5/logs$ nano hadoop-cliff-datanode-cliff-VirtualBox.log
