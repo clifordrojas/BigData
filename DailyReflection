@@ -1,6 +1,6 @@
 #Cliford Rojas
 #EnhanceIT
-#01/27/2020
+#01/28/2020
 
 Completed:
 	-Bash Automation run for 3 hours for Jan 27 at 4pm,5pm,6pm
@@ -10,6 +10,11 @@ Completed:
 Todo:
 	-Learn DAG Directed Acyclic Graph
 	-Group automation of Hadoop
+	-Task 4 in scala
+	-Flume 1 (read from netcat/file/dir)(write to file)
+	-Flume 2 (read from another source)(Write to hdfs)
+	-Hadoop create dir data,tmp,user
+	-Install Airflow (Run Airflow) (Automate task 2 && 3)(2: Publisher/Consumer)(3:Python Code List,PosARR)
 Learned:
 	-Learned how to use crontab to automate a simple process every minute
 	-Flume install
