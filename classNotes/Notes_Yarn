@@ -1,0 +1,15 @@
+YARN - Yet another resource manager
+
+Client Node - The machine we work on.
+
+NodeManager - HDFS data node - YARN  controls 
+
+Node = Server
+
+Difference between YARN and Zookeepr
+"Your app talks to the resource manager to distribute work to your cluster"
+
+You can specify diff schedule options for apps 
+	- FIFO, Capacity, and Fair schedulers
+Explain - Directed Acyclic Graph
+

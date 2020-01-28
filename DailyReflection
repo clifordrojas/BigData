@@ -7,6 +7,7 @@ Completed:
 	-Fixed hadoop datanode error
 	-Installed Flume
 Todo:
+	-Learn DAG Directed Acyclic Graph
 	-Group automation of Hadoop
 Learned:
 	-Learned how to use crontab to automate a simple process every minute
