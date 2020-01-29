@@ -1,0 +1,13 @@
+Messaging System
+Transfer data from one app to another. Meessages are qued asynchornously between client app mess sys
+point to point 
+pub-sub messaging system one to many relationship
+
+Kafka is a general pub-sub system
+publishes them to a steam of data called topic
+
+Topic - You subscribe to it and all the data is stored in it.
+Broker - maintaining the published data
+kafka cluster - have more than one broker
+
+

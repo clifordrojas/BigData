@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#Run Very second 
+while sleep 10; do python3 wordCountHamlet.py ; done
+
+#cron command to do the same but nicer
+#1 2 3 4 5 /root/backup.sh
+#1 2 3 4 5 /path/to/command arg1 arg2
+#1) Minute
+#2) Hours
+#3) Day
+#4) Month 12== December
+#5) Day of the week 0/7 equals sunday
+#/path/to/command-Scipt or command name to schedule
+#Edit cron file to add command
+crontab -e 
+
+#Enable logging by uncommenting  /etc/rsyslog.d/50-default.conf      '#cron.*
+#Restart the services 'sudo service rsystelog restart'
+#cehck log files in /var/log/cron.log
+#Use this to automate Things
+

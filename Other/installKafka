@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#Get Kafka
+wget http://apache-mirror.8birdsvideo.com/kafka/2.3.1/kafka-2.3.1-src.tgz
+#Extract the file
+tar -xzvf kafka-2.3.1-src.tgz 
+#Move
+mv kafka-2.3.1-src  /home/opt
+
+#Update the bash profile
+echo 'export KAFKA_HOME=/home/opt/kafka-2.3.1-src ' >> ~/.bash_profile
+echo 'export PATH=$PATH:$KAFKA_HOME/bin' >> ~/.bash_profile
+
+

@@ -1,0 +1,24 @@
+#Establish my identify 
+git config --global user.name "Cliford R."
+git config --global user.email "cliffordrojas@gmail.com"
+
+#Clone the github repository 
+git clone https://github.com/clifordrojas/BigData.git
+
+#Checkout the repository
+git checkout master
+
+#Pull the repository to ensure it is all up to date
+git pull origin master
+
+#Check for any commits pending or modified files
+git status
+
+#Use to remove recursively 'I deleted a folder with this'
+git rm -r BigData.git/
+
+#Commit with notes
+git commit -m "Removed BigData.git"
+
+#Push all the changes
+git push
