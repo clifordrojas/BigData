@@ -5,10 +5,9 @@
 Completed:
 -Task 8 Completed
 -Task 9 Completed
-
+-Task 10 Starting Agen & Automation install
 
 Todo:
--Learn DAG Directed Acyclic Graph
 -Group automation of Hadoop
 -Flume 1 (read from netcat/file/dir)(write to file)
 -Flume 2 (read from another source)(Write to hdfs)
@@ -17,4 +16,6 @@ Todo:
 
 
 Learned:
--Scala Code (Opening/Reading files, for loops, map, Syntax)
+-Map Reduce using Scala library 
+-Directed Acyclic Graph (DAG) Principles
+
