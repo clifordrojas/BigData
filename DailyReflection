@@ -3,21 +3,18 @@
 #01/28/2020
 
 Completed:
-	-Bash Automation run for 3 hours for Jan 27 at 4pm,5pm,6pm
-	-Fixed hadoop datanode error
-	-Installed Flume
-	-Task 9 Completed
-Todo:
-	-Learn DAG Directed Acyclic Graph
-	-Group automation of Hadoop
-	-Task 4 in scala
-	-Flume 1 (read from netcat/file/dir)(write to file)
-	-Flume 2 (read from another source)(Write to hdfs)
-	-Hadoop create dir data,tmp,user
-	-Install Airflow (Run Airflow) (Automate task 2 && 3)(2: Publisher/Consumer)(3:Python Code List,PosARR)
-Learned:
-	-Learned how to use crontab to automate a simple process every minute
-	-Flume install
-	-YARN fits in
-	-Scala Code (Objects,methods,functions, return functions,List,ListBuf)
+-Task 8 Completed
+-Task 9 Completed
 
+
+Todo:
+-Learn DAG Directed Acyclic Graph
+-Group automation of Hadoop
+-Flume 1 (read from netcat/file/dir)(write to file)
+-Flume 2 (read from another source)(Write to hdfs)
+-Hadoop create dir data,tmp,user
+-Install Airflow (Run Airflow) (Automate task 2 && 3)(2: Publisher/Consumer)(3:Python Code List,PosARR)
+
+
+Learned:
+-Scala Code (Opening/Reading files, for loops, map, Syntax)
