@@ -8,7 +8,7 @@ One of the ways flume is used is for log aggregation
 Ingestion Method:
 	Data flow/archetecture is very important so request if necessary
 	Web Server -> source -> channel -> sink -> HBase
-			*	*	     *
+	Agent - Core component 		*	*	     *
 	* means things you need to configure
 	Source - where does it come from.
 		Source types:
