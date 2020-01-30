@@ -13,7 +13,14 @@ echo "a1.channels = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
 
 echo "#Describe/Configure the source" >> /home/opt/apache-flume-1.9.0-bin/example.conf
 echo -e "a1.sources.r1.type = netcat\na1.sources.r1.bind = localhost\na1.sources.r1.port = 44444" >> /home/opt/apache-flume-1.9.0-bin/example.conf
-echo -e "# Describe the sink\na1.sinks.k1.type = logger" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+echo  "a1.sources.r1.channels = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+echo -e "# Describe the sink\na1.sinks.k1.type = file_roll" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo  "a1.sinks.k1.channel = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo  "a1.sinks.k1.sink.directory = /home/opt/apache-flume-1.9.0-bin/destinationSinkDir" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+
 echo -e "# Use a channel which buffers events in memory\na1.channels.c1.type = memory\na1.channels.c1.capacity = 1000\na1.channels.c1.transactionCapacity = 100" >> /home/opt/apache-flume-1.9.0-bin/example.conf
 echo -e "# Bind the source and sink to the channel\na1.sources.r1.channels = c1\na1.sinks.k1.channel = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
 
