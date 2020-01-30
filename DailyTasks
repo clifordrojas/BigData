@@ -8,11 +8,14 @@ Completed:
 -Task 10 Complete
 -Python API data creation
 -Task 11 Completed
+-Task 12 Completed
 
 Todo:
 -Group automation of Hadoop
--Hadoop create dir data,tmp,user
 -Install Airflow (Run Airflow) (Automate task 2 && 3)(2: Publisher/Consumer)(3:Python Code List,PosARR)
 
 
 Learned:
+-KAFKA Vs FLUME as an Ingestion tool
+-Setting up sink types for FLUME
+

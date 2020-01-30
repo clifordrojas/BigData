@@ -2,3 +2,5 @@
 hdfs dfs -cat /user/Hadoop/seqgen_data/log.1580415827658
 #Navigate the HDFS dir
 hadoop fs -ls /user/Hadoop/seqgen_data
+#Copy Data
+hadoop fs -copyFromLocal notes/DailyTasks /data
