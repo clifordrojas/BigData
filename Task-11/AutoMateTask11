@@ -1,0 +1,26 @@
+#!/bin/sh
+#This is for task 11 the source is seq
+cd /home/opt/apache-flume-1.9.0-bin/
+#Start Flume
+/home/opt/apache-flume-1.9.0-bin/bin/flume-ng agent -n $agent_name -c conf -f conf/flume-conf.properties.template
+
+#Create configuration file
+echo "# example.conf: A single-node Flume configuration" > /home/opt/apache-flume-1.9.0-bin/example.conf
+echo "# Name the components on this agent" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo "a1.sources = r1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo "a1.sinks = k1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo "a1.channels = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+#Setting up the source
+echo "#Describe/Configure the source" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo -e "a1.sources.r1.type = seq" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+echo  "a1.sources.r1.channels = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+#Setting up the sink
+echo -e "# Describe the sink\na1.sinks.k1.type = file_roll" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo -e "# Sink to HDFS\na1.sinks.k1.type = hdfs \na1.sinks.k1.hdfs.path = hdfs://localhost:9000/user/Hadoop/seqgen_data/\na1.sinks.k1.hdfs.filePrefix = log \na1.sinks.k1.hdfs.rollInterval = 0\na1.sinks.k1.hdfs.rollCount = 10000\na1.sinks.k1.hdfs.fileType = DataStream " >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+echo -e "# Use a channel which buffers events in memory\na1.channels.c1.type = memory\na1.channels.c1.capacity = 1000\na1.channels.c1.transactionCapacity = 100" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+echo -e "# Bind the source and sink to the channel\na1.sources.r1.channels = c1\na1.sinks.k1.channel = c1" >> /home/opt/apache-flume-1.9.0-bin/example.conf
+
+#Start Flume
+/home/opt/apache-flume-1.9.0-bin/bin/flume-ng agent --conf conf --conf-file example.conf --name a1 -Dflume.root.logger=INFO,console
