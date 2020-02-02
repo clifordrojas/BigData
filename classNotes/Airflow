@@ -1,0 +1,6 @@
+Airflow pipelines are configuration a spython code.
+Elegan solution to parameterize your scrips and built into the core of airflow. 
+Modular architecture and usees a messaging queue to orchestate num of workers scale to infinity.
+Uses DAG scheduling algo. 
+
+
