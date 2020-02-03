@@ -3,19 +3,14 @@
 #01/30/2020
 
 Completed:
--Task 8 Completed
--Task 9 Completed
--Task 10 Complete
--Python API data creation
--Task 11 Completed
--Task 12 Completed
+-Task 16 (Created python producer/consumer, write to HDFS using the API DATA)
+
 
 Todo:
--Group automation of Hadoop
--Install Airflow (Run Airflow) (Automate task 2 && 3)(2: Publisher/Consumer)(3:Python Code List,PosARR)
-
+-Group automation of Assigned Tasks
+-Task 17 (Do task 16 in scala)
 
 Learned:
--KAFKA Vs FLUME as an Ingestion tool
--Setting up sink types for FLUME
+-Stop zookeeper when the port didn't close via terminal
+-Run bash commands using python 
 
