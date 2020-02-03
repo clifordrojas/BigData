@@ -1,0 +1,36 @@
+#!/bin/sh
+
+cd /home/cliff/notes/Task-13/
+
+#PART 0
+source part0
+cd /home/cliff/notes/Task-13/
+
+source part0B
+cd /home/cliff/notes/Task-13/
+
+source part0C
+cd /home/cliff/notes/Task-13/
+
+
+#PART 1
+source part1
+cd /home/cliff/notes/Task-13/
+
+source part1A
+cd /home/cliff/notes/Task-13/
+
+source part1B
+cd /home/cliff/notes/Task-13/
+
+source part1C
+cd /home/cliff/notes/Task-13/
+
+
+#Part 2
+source part2
+cd /home/cliff/notes/Task-13/
+
+source part2B
+cd /home/cliff/notes/Task-13/
+

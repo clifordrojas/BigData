@@ -1,3 +1,3 @@
 #!/bin/sh
 
-nc localhost
+netcat -l localhost 2424
