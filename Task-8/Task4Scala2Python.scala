@@ -7,7 +7,7 @@ object Task4Scala2Python {
   def main(args: Array[String]): Unit = {
     var dict: Map[String, Int] = Map()
 
-    val bufferedSource = Source.fromFile("src/main/shakeSpear.txt")
+    val bufferedSource = Source.fromFile("shakeSpear.txt")
     for (line <- bufferedSource.getLines) {
       var lineArr = line.split(" +")
       for (words <- 0 to lineArr.length - 1) {
@@ -15,7 +15,7 @@ object Task4Scala2Python {
       }
     }
     var mDict = collection.mutable.Map(dict.toSeq: _*)
-    val bufferedSource2 = Source.fromFile("src/main/shakeSpear.txt")
+    val bufferedSource2 = Source.fromFile("shakeSpear.txt")
     for (line <- bufferedSource2.getLines) {
       var lineArr2 = line.split(" +")
       for (words <- 0 to lineArr2.length - 1) {
@@ -25,7 +25,7 @@ object Task4Scala2Python {
     }
     println(dict)
     println(mDict)
-    val outputFile = new BufferedWriter(new FileWriter("src/main/shakeSpear.csv"))
+    val outputFile = new BufferedWriter(new FileWriter("shakeSpear.csv"))
     outputFile.write("Word , Count \n")
 
     for (word <- mDict) {

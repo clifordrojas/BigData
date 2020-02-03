@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#Start netcat 
+np -lp 2424
+

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Run Task 8,9,10 Sequentially
+#Task 10
+cd /home/cliff/notes/Task-10/
+
+#Task 10 execute
+source AutoMateTask10
+

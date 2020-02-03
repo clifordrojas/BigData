@@ -1,2 +1,11 @@
+#!/bin/sh
 #Run Task 8,9,10 Sequentially
+#Task 8
+cd /home/cliff/notes/Task-8/
+
+#Compile Scala
+scalac Task4Scala2Python.scala
+
+#Execute Scala 
+scala Task4Scala2Python
 
