@@ -3,14 +3,13 @@
 #01/30/2020
 
 Completed:
--Task 16 (Created python producer/consumer, write to HDFS using the API DATA)
--Completed my group task Assignment (Install Java, Install Kafka)
+-Updated MapReduce in Python to meet exprections (1 Read, 1 CSV output file). Improved Big(O) time. Improved code documentation. Used mapper and reducer functions.
+
+
 
 Todo:
--Group automation of Assigned Tasks
+-Group Powerpoint (Why do we care? Automation? Hadoop?)
 -Task 17 (Do task 16 in scala)
 
 Learned:
--Stop zookeeper when the port didn't close via terminal
--Run bash commands using python 
 
