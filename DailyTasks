@@ -1,15 +1,21 @@
 #Cliford Rojas
 #EnhanceIT
-#01/30/2020
+#02/5/2020
 
 Completed:
--Updated MapReduce in Python to meet exprections (1 Read, 1 CSV output file). Improved Big(O) time. Improved code documentation. Used mapper and reducer functions.
-
+-Updated MapReduce in Python to meet expections (1 Read, 1 CSV output file). Improved Big(O) time. Improved code documentation. Used mapper and reducer functions.
+-Updated MapReduce in Scala to meet expections (1 Read, 1 CSV output file). Improved Big(O) time. Used mapper and reducer functions.
+-Completed Powerpoint Slides for presentation (Why do we care about automation)
 
 
 Todo:
--Group Powerpoint (Why do we care? Automation? Hadoop?)
--Task 17 (Do task 16 in scala)
+-Map reducion using pyspark 
+-Map reduction using spark
+-Practice automation presentation
+
 
 Learned:
-
+-How to properly map keywords 
+-Reduce all the keywords into one dictionary/map
+-Some code notes about Spark & pySpark
+-Importance of good coding practices.
