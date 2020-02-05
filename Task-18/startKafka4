@@ -1,0 +1,29 @@
+#!/bin/sh
+
+#Start Zookeeper
+nohup /home/opt/apache-zookeeper-3.5.6-bin/bin/zkServer.sh start &
+
+cd /home/opt/kafka_2.12-2.3.1
+#Start Kafka Server
+#Server 1
+#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-1.properties
+nohup bin/kafka-server-start.sh config/server-1.properties &
+
+#Server 2
+#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-2.properties
+nohup bin/kafka-server-start.sh config/server-2.properties &
+
+#Server 3
+#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-3.properties
+nohup bin/kafka-server-start.sh config/server-3.properties &
+
+#Server 4
+#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-4.properties
+nohup bin/kafka-server-start.sh config/server-4.properties &
+
+#Create topic
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 4 --partitions 4 --topic kafkaFour
+
+#Check for success
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+

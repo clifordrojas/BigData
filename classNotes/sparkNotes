@@ -1,0 +1,32 @@
+It's a large-scale processing framework.
+Driver -> Cluster Manag -> Executor 
+	  (Spark,Yarn)	-> Executor
+			-> Executor
+Runs up to 100x Faster in memory and 10x faster on disk.
+Its easy to run. Built around one main concetp: Resilient Distributed Dataset (RDD).
+Components of Spark
+1) Spk Streaming
+2) Spk SQL
+Not used for us 3) MLLib 4) GraphX
+
+We will use Python
+A lot simpler and this is just an overview. 
+But... SPark is written in scala. 
+
+Resilient Distributed Dataset (RDD):
+Created by the driver program
+Responsible for making RDD's resilient adn distributed
+Spark shell creates a "sc" spark context or "ss" spark session
+Create RDD:
+nums = parallelize([1,2,3,4])
+sc.textFile(file:///,hdfs://,s2n://)
+hiveCtx = HiveContext(sc) rows hiveCtx.sql("SELECT name, age FROM  users")
+Logical and Physical plan. Physical plan derrives from logical plan.
+
+Transforming RDD's
+map, flatmap, filter, distinct, sample, union, cartisian, intersections, subtract.
+Lambda is anonymus function. (one liner function)
+Actions RDD's
+collect, count , coutnBY value, take top, reduce..etc
+
+

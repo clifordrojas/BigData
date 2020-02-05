@@ -1,0 +1,11 @@
+#Get current directory
+System.getProperty("user.dir")
+
+#Get the file
+val hamlet = sc.textFile("data/shakespeare-hamlet.txt")
+
+#Split the file
+val hamlet1 = hamlet.map(x=>x.split(" "))
+
+#add up the size of all lines
+hamlet.map(s => s.length).reduce((a,b)=> a +b)
