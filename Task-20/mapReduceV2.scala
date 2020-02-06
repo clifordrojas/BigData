@@ -27,7 +27,7 @@ object Task4Scala2Python {
     for (line <- bufferedSource.getLines) {
       val lineArr = line.split(" +")
       for (words <- lineArr) {
-        val hello = (stripAll(words, ",?.!@#$%^&*()_+".toLowerCase()), 1)
+        val hello = (stripAll(words.toLowerCase, ",?.!@#$%^&*()_+".toLowerCase()), 1)
         tupleList.addOne(hello)
       }
     }
