@@ -3,19 +3,15 @@
 #02/5/2020
 
 Completed:
--Updated MapReduce in Python to meet expections (1 Read, 1 CSV output file). Improved Big(O) time. Improved code documentation. Used mapper and reducer functions.
--Updated MapReduce in Scala to meet expections (1 Read, 1 CSV output file). Improved Big(O) time. Used mapper and reducer functions.
--Completed Powerpoint Slides for presentation (Why do we care about automation)
+-Applied Map Reduce methods in pySpark 
+-Applied Map Reduce methods in Spark
+-Successful presentation of group responsibility (Automation)
 
 
 Todo:
--Map reducion using pyspark 
--Map reduction using spark
--Practice automation presentation
-
+-Kafka Bash Automation Set up based on number of servers wanted Task-18 
 
 Learned:
--How to properly map keywords 
--Reduce all the keywords into one dictionary/map
--Some code notes about Spark & pySpark
--Importance of good coding practices.
+-Map Reduction using spark and pySpark libraries
+-Set up inteli J (Scala) dependencies and where to get them mvnrepository.com
+
