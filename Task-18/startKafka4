@@ -1,29 +1,26 @@
-#!/bin/sh
+#!/bin/bash
+source ~/.bash_profile
 
-#Start Zookeeper
-nohup /home/opt/apache-zookeeper-3.5.6-bin/bin/zkServer.sh start &
-sleep 10
-cd /home/opt/kafka_2.12-2.3.1
-#Start Kafka Server
-#Server 1
-#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-1.properties
-nohup bin/kafka-server-start.sh config/server-1.properties &
-sleep 10
-#Server 2
-#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-2.properties
-nohup bin/kafka-server-start.sh config/server-2.properties &
-sleep 10
-#Server 3
-#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-3.properties
-nohup bin/kafka-server-start.sh config/server-3.properties &
-sleep 10
-#Server 4
-#gnome-terminal -e /home/opt/kafka_2.12-2.3.1/bin/kafka-server-start.sh config/server-4.properties
-nohup bin/kafka-server-start.sh config/server-4.properties &
-sleep 30
-#Create topic
-bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 4 --partitions 4 --topic kafkaFour
-sleep 20
-#Check for success
-bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+cd /home/opt/kafka_2.12-2.3.1/config
+
+cat /home/opt/kafka_2.12-2.3.1/config/server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-1/"> server.properties.1
+echo "
+listeners=PLAINTEXT://:19091
+" >> server.properties.1
+
+cat /home/opt/kafka_2.12-2.3.1/config/server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-2/"> server.properties.2
+echo "
+listeners=PLAINTEXT://:19092
+" >> server.properties.2
+
+zookeeper-server-start.sh -daemon $KAFKA_HOME/config/zookeeper.properties 
+sleep 1
+
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties.1
+sleep 1
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties.2
+sleep 1
+
+# create a sample topic
+kafka-topics.sh --create --topic example --zookeeper localhost:2181 --partitions 1 --replication-factor 1
 
