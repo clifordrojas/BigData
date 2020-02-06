@@ -5,7 +5,7 @@ System.getProperty("user.dir")
 val lines = sc.textFile("file:///home/cliff/notes/Task-20/shakespeare-hamlet.txt")
 
 #clean 
-val clean_rdd = lines.flatMap(line => line.toLowerCase.split(' '))
+#val clean_rdd = lines.flatMap(line => line.toLowerCase.split(' '))
 
 #Remove empty space
 val clean_rdd = lines.flatMap(line => line.toLowerCase.split("\\W+")).filter(word => word != "")
@@ -27,7 +27,7 @@ val df = df_rdd.toDF("Word","Count").show()
 #Save the file
 df.write.format("csv").save("/output/")
 #Split the file
-val hamlet1 = hamlet.map(x=>x.split(" "))
+#val hamlet1 = hamlet.map(x=>x.split(" "))
 
 #add up the size of all lines
-hamlet.map(s => s.length).reduce((a,b)=> a +b)
+#hamlet.map(s => s.length).reduce((a,b)=> a +b)
