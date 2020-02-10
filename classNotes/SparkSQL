@@ -1,0 +1,42 @@
+Spark SQL (DataFrames & DataSets)
+-All available via Spark Session
+-Spark Context contains RDD not DATAFRAMES,SETS.
+
+Working with structured data
+-Exended RDD to a "DataFrame" object
+
+DataFrames:
+	-Contains Row Objects
+	-Can run SQL queries
+	-Has a schema (more efficient storage)
+	-Read and Write to JSON, HIVE, Parquet, CSV, ..etc
+	-Communicates with JDBC/ODBC, Tableau
+
+Hot vs Cold data: Data that just got in and being processed and analized. Cold data is old data that isn't being processed. 
+
+SparkSQL in python
+from pyspark.sql import SQLContext, Row
+hiveContext = HiveContext(sc)
+inputData = spark.read.json(dataFile)
+inputData.createOrReplaceTEmpView("")
+
+dataframes methods
+	-Show()
+	.Select
+	.filter(myResultDatarame("somefiendame"> 200)
+	.groupBy
+	-rdd().mapperFunc
+
+Datasets (Spark 2.o)
+-DataFrames is really a DataSet of Row Obj
+
+User-defined Function (UDF's)
+	from pyspark.sql.types import IntegerType
+	hiveCtx.registerFunction("square", lambda x: x*x, IntegerType())
+	df = hiveCtx.sql(SELECT XXXX FROM XXXX)
+
+Stuctured Data : CSV, Paqwet
+Unstructured: Text,Image/Video
+Semi-Stuctured: JSON, XML
+
+

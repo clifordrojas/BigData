@@ -3,15 +3,11 @@
 #02/5/2020
 
 Completed:
--Applied Map Reduce methods in pySpark 
--Applied Map Reduce methods in Spark
--Successful presentation of group responsibility (Automation)
 
 
 Todo:
 -Kafka Bash Automation Set up based on number of servers wanted Task-18 
 
 Learned:
--Map Reduction using spark and pySpark libraries
--Set up inteli J (Scala) dependencies and where to get them mvnrepository.com
-
+-Spark SQL
+-SQL Commands

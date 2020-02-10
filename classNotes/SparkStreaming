@@ -1,0 +1,27 @@
+Spark Streaming
+
+-Realtime
+-Realtime transformations
+
+Ingestion from
+	-IOT devices
+
+High Level Overview
+	Data Streams
+	batches of data for give time increments
+	transform and output
+DStream
+	-Generate RDD each time step and produce output each time
+	-Underlying RDD's i fyou need them
+
+Stateful data
+	-Keeps track of the data
+Stateless Data
+	-Does not keep track
+
+Windowed Transformation
+	-Sliding window 
+
+Spark Structured Streaming: The difference between rdd and (dataset/dataframe)
+
+ 
