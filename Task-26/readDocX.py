@@ -46,12 +46,18 @@ bad_words = stopwords.words('english')
 profile_List = []
 #Set of profiles to compare
 
+<<<<<<< HEAD
+=======
+counter = 0
+
+>>>>>>> 280dc0fb965387228625fcc8c5dcddcf67b0500d
 for x in range(len(entries)):
     """
     Iterate through the whole file(s) and add the words that match the key word for all .doc or .docx files in the
     directory.
     """
     try:
+<<<<<<< HEAD
         docx_file = textract.process(dir + entries[x]).decode("utf-8")
 
 
@@ -61,6 +67,14 @@ for x in range(len(entries)):
                 print("Not Adding empty")
             else:
                 profile_List.append(lines)
+=======
+        docx_file = textract.process(dir + entries[x]).decode("utf-8").split(".")
+        docx_file = str(docx_file).replace("\\n", " ")
+        sentenceFile =  docx_file.split(" ")
+
+        profile_List.append(docx_file)
+
+>>>>>>> 280dc0fb965387228625fcc8c5dcddcf67b0500d
 
         words_List = docx_file.split(" ")
         for words in words_List:
@@ -83,6 +97,21 @@ for x in range(len(entries)):
         # docx_file = textract.process(dir + entries[x])
 
 
+<<<<<<< HEAD
+=======
+def getLines(profile_List):
+    # for profiles in  profile_List:
+    check = profile_List[0]
+    words = check.split(" ")
+
+    return words
+
+
+
+get_lines_from_profileList = getLines(profile_List)
+print(get_lines_from_profileList)
+
+>>>>>>> 280dc0fb965387228625fcc8c5dcddcf67b0500d
 
 sc = SparkContext("local", "First App")
 sc.setLogLevel("OFF")
@@ -100,6 +129,7 @@ df = spark.createDataFrame(df_rdd).toDF("Word","Count")
 three_column = df.withColumn("Frequency",(df.Count/df.count())).sort(f.col("Frequency").desc())
 three_column = three_column.withColumn("Frequency",f.round(three_column['Frequency'],2))
 #-------------------------Everything Above Works------------------------------------------------#
+<<<<<<< HEAD
 #List of lines Query
 f = open("Lines.txt", "w")
 for x in profile_List:
@@ -111,6 +141,15 @@ f.close()
 # dataFrame = spark.createDataFrame(profile_1_data).toDF("Profile_1","Profile_1_Count")
 
 print(three_column.show())
+=======
+#
+profile_1_data = sc.parallelize(get_lines_from_profileList).map(lambda word: "".join(w for w in word if w not in punctuation)).map(lambda word: (word,1))\
+    .reduceByKey(lambda v1,v2: v1+v2 )\
+    .sortBy(lambda x: x[1], ascending = False )
+dataFrame = spark.createDataFrame(profile_1_data).toDF("Profile_1","Profile_1_Count")
+
+print(three_column.show(),dataFrame.show())
+>>>>>>> 280dc0fb965387228625fcc8c5dcddcf67b0500d
 
 """
 Shuffle : Move data from one server to another
