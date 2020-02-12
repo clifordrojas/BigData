@@ -1,0 +1,3 @@
+This task will read a files from directory and
+extract the text of the files using spark. 
+

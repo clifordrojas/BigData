@@ -47,7 +47,7 @@ def main():
     #Starting list of strings
     mapList = []
 
-    with open("shakespeare-hamlet.txt") as file:
+    with open("caesar.txt") as file:
         for line in file:
             line_split = line.split(" ")
             for x in line_split:
@@ -59,7 +59,7 @@ def main():
     print(recudedDictionary)
 
 
-    printerWriter = open('HamletCount.csv', 'w')
+    printerWriter = open('caesar.csv', 'w')
     # Step 3: Display the results to the console.
     stop = 0
     printerWriter.writelines("Word ,  Count \n")
@@ -67,9 +67,9 @@ def main():
         # print(key, recudedDictionary[key])
         printerWriter.writelines("{} , {}\n".format(key, recudedDictionary[key]))
 
-    bash_command = 'hadoop fs -copyFromLocal HamletCount.csv /data'
+    bash_command = 'hadoop fs -copyFromLocal caesar.csv /data'
     process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
-    output,error = process.communicate()
+    #output,error = process.communicate()
 
 if __name__ == '__main__':
     main()
