@@ -1,0 +1,14 @@
+Sec | Ci/CD| Datalake| Processing| Datawarehouse| 
+
+Datawarehouse:
+	Create the flow of things you want to implement
+	Machine -> Access > I don't do my job
+	Spark vs Map Reduce (Streaming vs non-streaming) (memory vs storage)
+	Hive evntual consistency. 
+	OLTP -> SQL
+	DLAP -> No SQL
+	
+	Dimension Tables and Fact Table
+	
+Proposal -> Capstone
+Monday proposal 
