@@ -1,0 +1,13 @@
+Why not HIVE
+-Not appropriate for OLTP
+-Store data de-normalized
+-SQL is limitd what it can do 
+	Use PIG, SPark allows for more complex
+No record level updates, inserts, deletes
+No transactions
+
+Hive Maintains a "metastore" impacts a structure defined on the unstructured data.
+
+
+managed vs external tables (Pointers)
+hive		pass location not in hive
