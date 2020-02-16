@@ -11,3 +11,8 @@ Hive Maintains a "metastore" impacts a structure defined on the unstructured dat
 
 managed vs external tables (Pointers)
 hive		pass location not in hive
+
+Static partitioning: Data organization that already exist
+Dynamic part: Data organization can get created
+
+PARTITIONED BY (dynamic)

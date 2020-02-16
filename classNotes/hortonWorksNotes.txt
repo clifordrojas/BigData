@@ -14,7 +14,14 @@ hive
 #If hive hangs use:
 hive --hiveconf hive.execution.engine=mr #-f load_data.sql
 
+#-f is run query from files: "hive -f /somepath/queries.hql"
+
 #Create the movies_db
 CREATE DATABASE movies_db;
+#Create table in db
+CREATE TABLE movies_db  movies_db
+#Insert Data from file
+LOAD DATA LOCAL INPATH "/data/u.data" OVERWRITE INTO TABLE movies_db;
+  
 
 
