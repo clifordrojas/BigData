@@ -1,8 +1,10 @@
+import sys
+
 from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 import requests
 from io import StringIO
-from hdfs import InsecureClient
+#from hdfs import InsecureClient
 from pyspark.streaming.kafka import KafkaUtils
 from kafka import KafkaProducer
 
@@ -22,14 +24,14 @@ def readAPI():
     output.close()
     return data
 def sendKafkaMessage(producer,lines):
-    producer.send("Chuck Norris", bytes(lines, 'utf-8'))
-    producer.flush()
+    producer.send("ChuckNorris", bytes(lines, 'utf-8'))
+    # producer.flush()
 
 def handler(message):
     records = message.collect()
     for record in records:
         producer.send('spark.out', str(record))
-        producer.flush()
+        # producer.flush()
 
 
 if __name__ == '__main__':
@@ -43,8 +45,12 @@ if __name__ == '__main__':
     sc = SparkContext.getOrCreate()
     ssc = StreamingContext(sc, 10)
 
-    brokers, topic = sys.argv[1:]
-    stream = KafkaUtils.createDirectStream(ssc, [topic], {"metadata.broker.list": brokers})
+    brokers = ""
+    topic = ""
+
+    broker = "localhost:9092"
+    topic = ["ChuckNorris"]
+    stream = KafkaUtils.createDirectStream(ssc, topic, {"metadata.broker.list": brokers})
     stream.foreachRDD(handler)
 
     ssc.start()

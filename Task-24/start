@@ -1,1 +1,11 @@
-spark-submit --jars spark-streaming-kafka-assembly_2.10-1.6.1.jar s.py localhost:9092 test
+#!/bin/sh
+#Star Zookeeper
+cd $ZOOKEEPER_HOME
+bin/zkServer.sh start
+
+#Start Kafka Server
+cd $KAFKA_HOME
+bin/kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties
+
+cd /home/cliff/notes/Task-24
+spark-submit --jars spark-streaming-kafka-assembly_2.10-1.6.1.jar sparkStream.py localhost:9092 test
