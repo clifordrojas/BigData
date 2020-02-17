@@ -1,0 +1,89 @@
+#Log in to HortonWorks
+ssh maria_dev@localhost -p 2222
+
+#Star hive 
+hive
+#If hive hangs use:
+hive --hiveconf hive.execution.engine=mr #-f load_data.sql
+
+#-f is run query from files: "hive -f /somepath/queries.hql"
+
+#-------------------------------HIVE Database------------------------------#
+CREATE DATABASE movielens_db;
+
+#Use Table
+USE movielens_db;
+#------------------------------Hive Tables---------------------------------#
+#Create Table
+CREATE TABLE hive_data
+    ( user_id   int,
+      movie_id  int,
+      rating    int,
+      time      int
+    )
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
+
+CREATE TABLE u_info
+    ( num_users   int,
+      items  int,
+      rating    int
+      );
+
+CREATE TABLE u_genre 
+( genre  VARCHAR(25),
+  genre_id int
+);
+
+CREATE TABLE u_occupation 
+( occupation VARCHAR(50)
+);
+
+#-----------------------------My SQL-----------------------------------------------#
+#MySQL
+#Create 4 Tables in MySQL
+CREATE DATABASE cliffsql_db;
+
+#Table num1
+CREATE TABLE hive_data
+    ( user_id   int,
+      movie_id  int,
+      rating    int,
+      time      int
+    );
+# 
+LOAD DATA LOCAL INFILE '/data/u.data' INTO TABLE hive_data FIELDS TERMINATED BY '\t';
+
+#----------------------u_info table--------------------------------------------------#
+CREATE TABLE u_info
+    ( num_users   int,
+      items  int,
+      rating    int
+      );
+# 
+LOAD DATA LOCAL INFILE '/data/u.info' INTO TABLE u_info FIELDS TERMINATED BY '\n';
+  
+#----------------------u.genre--------------------------------------------------------#
+CREATE TABLE u_genre 
+( genre  VARCHAR(25),
+  genre_id int
+);
+LOAD DATA LOCAL INFILE '/data/u.genre' INTO TABLE u_genre FIELDS TERMINATED BY '|';
+
+#----------------------u.occupation--------------------------------------------------#
+CREATE TABLE u_occupation 
+( occupation VARCHAR(50)
+);
+LOAD DATA LOCAL INFILE '/data/u.occupation' INTO TABLE u_occupation;
+
+#----------------------Delete rows---------------------------------------------------#
+delete from table where column = 0;
+
+#Try to pass tables
+
+#sqoop import --connect jdbc:mysql://localhost:3306/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import --
+
+sqoop import --connect jdbc:mysql://localhost:3306/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import --split-by user_id --hive-table movielens_db.hive_data
+
+

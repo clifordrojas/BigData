@@ -1,8 +1,10 @@
+Get DATA
 Pipeline Tools:
 	pyspark (script)
 	kafka
-	MySQL or other relational db 
 	hdfs 
+	spark
+	hive or sql
 	tablou 
 
 API:
