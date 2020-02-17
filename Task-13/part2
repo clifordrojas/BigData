@@ -1,7 +1,0 @@
-#!/bin/sh
-#Change to task 11
-cd /home/cliff/notes/Task-11/
- #Run 11
-source AutoMateTask11
-
-

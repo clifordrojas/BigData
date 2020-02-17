@@ -1,7 +1,0 @@
-#!/bin/sh
-
-
-#Modify the contab -e
-echo "0 16,17,18 27 1 1 python3 ~/notes/Task-3/pythongQuizCode.py" >> /tmp/crontab.qxewcx/crontab
-
-

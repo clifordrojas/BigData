@@ -1,7 +1,0 @@
-#!/bin/sh
-
-cd /home/cliff/notes/Task-4/
-
-#Run Task 4
-python  wordCountHamlet.py 
-
