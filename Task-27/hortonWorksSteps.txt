@@ -6,6 +6,7 @@ su root
 #Asks for password which is "hadoop"
 #Asks for password again to change default password
 123hadoop++
+
 #Transfer Files to hadoop ensure to work from dir. 
 scp -P 2222 * root@localhost:/data
 
@@ -35,6 +36,10 @@ STORED AS TEXTFILE;
 
 #Insert Data from file
 LOAD DATA LOCAL INPATH "/data/u.data" OVERWRITE INTO TABLE movie_data;
-  
+ 
+
+#Check MetaData
+USE DB_NAME;
+DESCRIBE FORMATTED TABLE_NAME;
 
 
