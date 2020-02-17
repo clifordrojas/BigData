@@ -3,13 +3,10 @@
 #02/14-16/2020
 
 Completed:
- -Reading data from Bible, Caesar, Hamlet using 2 Spark Sessions and 1 SparkContext -T23
- -Order the the words by count and compare the most frequent word excluding stopwords/articles -T23
- -Read from API + Kafka -T24
- -Read Data from file, extracted text, extracted lines, removed stopwords, and got frequency words -T26
- -Compared and joined 4 Dataframes that displayed the frequency of each profile -T26
- -Created database in hive. Created table for u.data. mv data files to machine -T27 (4/6)
- -Completed Capstone Project Proposal
+-Created Hive DB
+-Created Managed table in HIVE
+-Created 4 tables in mysql (loaded data)
+-move data from mysql to hdfs hive table
 
 Todo:
 - Automation of Tasks
@@ -17,12 +14,8 @@ Todo:
 - Task 25
 - Verify Task 24 (pending test to verify it works)
 - Task 27 (pending tables for 3 other files and import files in table using hive command)
+-Task 30
 
 Learned:
--RDD and dataframe relationship
--Better understanding of spark streaming
--Better understanding of pyspark tools
--Improved coding practices (modularity)
--Hive commands.
--Capstone project research.
-
+-MySQL queries (Create (db,table),Drop, Delete rows, SQL Datatypes)
+-Hive Queries  (Create (db,table),Drop, Delete rows, SQL Datatypes)
