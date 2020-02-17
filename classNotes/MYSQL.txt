@@ -1,0 +1,25 @@
+MySQL is a free relational database
+
+Useful for OLTP 
+MySQL data can exist outside of hadoop. Must import MySQL to hadoop.
+
+
+#Add user to MySQL login as root first so theres no issues.
+mysql -uroot -p
+#Enter the pw "hortonworks1" 
+
+CREATE USER maria_dev@localhost IDENTIFIED BY 'maria_dev';
+GRANT ALL PRIVILEGES ON * . * TO maria_dev@localhost;
+FLUSH PRIVILEGES;
+exit;
+
+
+sqoop import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies
+
+#Directly from hive
+sqoop import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies --hive-import
+
+sqoop export --connect jdbc:mysql://localhost/movielens -m 1 -- driver com.mysql.jdbc.Driver 
+--table exported_moves --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001'
+
+It's important to know jdbc it's a link that allows you to access it. 
