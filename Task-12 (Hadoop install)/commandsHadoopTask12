@@ -1,0 +1,8 @@
+#Make directories 
+hdfs dfs -mkdir /data
+hdfs dfs -mkdir /tmp
+hdfs dfs -mkdir /user
+
+#Copy file
+hadoop fs -copyFromLocal notes/DailyTasks /data
+

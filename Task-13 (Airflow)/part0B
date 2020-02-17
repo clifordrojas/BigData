@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#Run Task 8,9,10 Sequentially
+#Task 9
+cd /home/cliff/notes/Task-9/
+
+#Compile Scala
+scalac Start.scala
+
+#Execute Scala 
+scala Start.scala
+

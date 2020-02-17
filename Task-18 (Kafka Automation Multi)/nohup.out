@@ -1,0 +1,6 @@
+ZooKeeper JMX enabled by default
+Using config: /home/opt/apache-zookeeper-3.5.6-bin/bin/../conf/zoo.cfg
+Starting zookeeper ... already running as process 2306.
+ZooKeeper JMX enabled by default
+Using config: /home/opt/apache-zookeeper-3.5.6-bin/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED

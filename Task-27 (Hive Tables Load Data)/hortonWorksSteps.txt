@@ -1,0 +1,44 @@
+#Log in to HortonWorks
+ssh maria_dev@localhost -p 2222
+
+#Switch to root for the first time
+su root
+#Asks for password which is "hadoop"
+#Asks for password again to change default password
+123hadoop++
+
+#Transfer Files to hadoop ensure to work from dir. 
+scp -P 2222 * root@localhost:/data
+
+#Star hive 
+hive
+#If hive hangs use:
+hive --hiveconf hive.execution.engine=mr #-f load_data.sql
+
+#-f is run query from files: "hive -f /somepath/queries.hql"
+
+#Create the movies_db
+CREATE DATABASE movies_db;
+
+#Use Table
+USE movies_db;
+
+#Create Table
+CREATE TABLE movie_data
+    ( user_id   int,
+      movie_id  int,
+      rating    int,
+      time      int
+    )
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
+
+#Insert Data from file
+LOAD DATA LOCAL INPATH "/data/u.data" OVERWRITE INTO TABLE movie_data;
+ 
+
+#Check MetaData
+USE DB_NAME;
+DESCRIBE FORMATTED TABLE_NAME;
+

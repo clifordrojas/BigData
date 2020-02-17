@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#Start netcat
+netcat localhost 2424

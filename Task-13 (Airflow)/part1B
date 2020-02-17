@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /home/cliff/notes/Task-3/
+
+#Run Task 3
+python pythongQuizCode.py 

@@ -1,0 +1,3 @@
+In this directory youw ill find a python, scala, and spark code that 
+reads a file in a and outputs a list of words. These words will then be transfered to HDFS.
+

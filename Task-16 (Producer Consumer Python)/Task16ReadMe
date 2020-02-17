@@ -1,0 +1,11 @@
+Kafka producer in python
+Kafka consumer in Python
+Read from api, write file to HDFS
+
+Starting instructions
+
+#StartZookeeper
+bin/zkServer.sh start
+
+#Start Broker
+

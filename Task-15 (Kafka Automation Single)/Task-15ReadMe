@@ -1,0 +1,33 @@
+#Install Kafka with 3 servers.
+
+#Start Zookeeper
+bin/zkServer.sh start
+
+#Start Cli
+bin/zkCli.sh
+
+#Star kafka server
+bin/kafka-server-start.sh config/server.properties
+
+#Create topic
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+
+#Check is made
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+#Create producer
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+#Create a consumer 
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+#Multi-broker cluster
+config/server.properties config/server-1.properties
+config/server.properties config/server-2.properties
+config/server.properties config/server-3.properties
+
+#Start producer 
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-replicated-topic
+#Start consumer
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic my-replicated-topic
