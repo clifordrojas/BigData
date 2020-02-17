@@ -1,17 +1,28 @@
 #Cliford Rojas
 #EnhanceIT
-#02/5/2020
+#02/14-16/2020
 
 Completed:
--Reading data using Spark Context and Spark Session
--Cleaning and sorting data using the Spark
--Joining multiple Dataframes
- 
+ -Reading data from Bible, Caesar, Hamlet using 2 Spark Sessions and 1 SparkContext -T23
+ -Order the the words by count and compare the most frequent word excluding stopwords/articles -T23
+ -Read from API + Kafka -T24
+ -Read Data from file, extracted text, extracted lines, removed stopwords, and got frequency words -T26
+ -Compared and joined 4 Dataframes that displayed the frequency of each profile -T26
+ -Created database in hive. Created table for u.data. mv data files to machine -T27 (4/6)
+ -Completed Capstone Project Proposal
 
 Todo:
--Kafka Bash Automation Set up based on number of servers wanted Task-18 
+- Automation of Tasks
+- Task 18
+- Task 25
+- Verify Task 24 (pending test to verify it works)
+- Task 27 (pending tables for 3 other files and import files in table using hive command)
 
 Learned:
--Spark Joins
--Further improved my knowledge on RDD and DataFrames
+-RDD and dataframe relationship
+-Better understanding of spark streaming
+-Better understanding of pyspark tools
+-Improved coding practices (modularity)
+-Hive commands.
+-Capstone project research.
 
