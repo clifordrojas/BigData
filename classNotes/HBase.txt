@@ -1,0 +1,18 @@
+HBase
+Based on Google's BigTable
+
+Full CRUD operation
+-Create
+-Read
+-Update - Maintains historical record. Maybe the page got deleted so you want to see before.
+-Delete
+-There no query language, only CRUD API's!
+
+HBase Structure
+	Zookeeper
+	HMaster - Controls slaves
+	region servers (multiple)
+	hdfs
+Supports auto sharding
+
+HBase is column oriented storage:

@@ -1,10 +1,12 @@
 Get DATA
 Pipeline Tools:
-	pyspark (script)
+	Airflow
+	API
 	kafka
-	hdfs 
-	spark
-	hive or sql
+	spark 
+
+	hive or mysql
+	
 	tablou 
 
 API:
