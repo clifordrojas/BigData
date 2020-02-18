@@ -3,19 +3,13 @@
 #02/14-16/2020
 
 Completed:
--Created Hive DB
--Created Managed table in HIVE
--Created 4 tables in mysql (loaded data)
--move data from mysql to hdfs hive table
+-Completed Task 18 of automating the start up of kafka Servers
 
 Todo:
 - Automation of Tasks
-- Task 18
 - Task 25
 - Verify Task 24 (pending test to verify it works)
 - Task 27 (pending tables for 3 other files and import files in table using hive command)
 -Task 30
 
 Learned:
--MySQL queries (Create (db,table),Drop, Delete rows, SQL Datatypes)
--Hive Queries  (Create (db,table),Drop, Delete rows, SQL Datatypes)

@@ -24,12 +24,19 @@ cat server-4.properties | sed -e "s/broker.id=0/broker.id=4/" > server_4.propert
 cat server-5.properties | sed -e "s/broker.id=0/broker.id=5/" > server_5.properties
 echo "Broker id assigned"
 
-echo "listeners=PLAINTEXT://:9091" >> server_1.properties
-echo "listeners=PLAINTEXT://:9092" >> server_2.properties
-echo "listeners=PLAINTEXT://:9093" >> server_3.properties
-echo "listeners=PLAINTEXT://:9094" >> server_4.properties
-echo "listeners=PLAINTEXT://:9095" >> server_5.properties
-echo "Broker port assigned"
+echo -e "\nlisteners=PLAINTEXT://:9091" >> server_1.properties
+echo -e "\nlisteners=PLAINTEXT://:9092" >> server_2.properties
+echo -e "\nlisteners=PLAINTEXT://:9093" >> server_3.properties
+echo -e "\nlisteners=PLAINTEXT://:9094" >> server_4.properties
+echo -e "\nlisteners=PLAINTEXT://:9095" >> server_5.properties
+echo -e "\nBroker port assigned"
+
+rm server-1.properties
+rm server-2.properties
+rm server-3.properties
+rm server-4.properties
+rm server-5.properties
+
 #-----------------------------------End of configurations-------------------------------------------------------#
 
 cd $KAFKA_HOME
