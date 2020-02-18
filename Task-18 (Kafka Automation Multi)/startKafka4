@@ -1,5 +1,4 @@
-#!/bin/bash
-source ~/.bash_profile
+#!/bin/sh
 
 cd $ZOOKEEPER_HOME
 
@@ -9,37 +8,37 @@ bin/zkServer.sh start
 
 cd $KAFKA_HOME/config
 
-#create 5 server
-cp server.properties server-1.properties
-cp server.properties server-2.properties
-cp server.properties server-3.properties
-cp server.properties server-4.properties
-cp server.properties server-5.properties
+#------------------------------------Configure server properties-----------------------------------------------#
+#cat server.properties |
+cat server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-1/"> server-1.properties 
+cat server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-2/"> server-2.properties 
+cat server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-3/"> server-3.properties 
+cat server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-4/"> server-4.properties 
+cat server.properties | sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-5/"> server-5.properties 
+echo "Server 1-5 properties completed"
+#cat server-1.properties |
+cat server-1.properties | sed -e "s/broker.id=0/broker.id=1/" > server_1.properties
+cat server-2.properties | sed -e "s/broker.id=0/broker.id=2/" > server_2.properties
+cat server-3.properties | sed -e "s/broker.id=0/broker.id=3/" > server_3.properties
+cat server-4.properties | sed -e "s/broker.id=0/broker.id=4/" > server_4.properties
+cat server-5.properties | sed -e "s/broker.id=0/broker.id=5/" > server_5.properties
+echo "Broker id assigned"
 
-sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-1/"> server-1.properties 
-sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-2/"> server-2.properties 
-sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-3/"> server-3.properties 
-sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-4/"> server-4.properties 
-sed -e "s/log.dirs=\/tmp\/kafka-logs/log.dirs=\/tmp\/kafka-logs-5/"> server-5.properties 
-
-sed -e "s/broker.id=0/broker.id=1" > server-1.properties
-sed -e "s/broker.id=0/broker.id=2" > server-2.properties
-sed -e "s/broker.id=0/broker.id=3" > server-3.properties
-sed -e "s/broker.id=0/broker.id=4" > server-4.properties
-sed -e "s/broker.id=0/broker.id=5" > server-5.properties
-
-
-echo "listeners=PLAINTEXT://:9091" >> server-1.properties
-echo "listeners=PLAINTEXT://:9092" >> server-2.properties
-echo "listeners=PLAINTEXT://:9093" >> server-3.properties
-echo "listeners=PLAINTEXT://:9094" >> server-4.properties
-echo "listeners=PLAINTEXT://:9095" >> server-5.properties
+echo "listeners=PLAINTEXT://:9091" >> server_1.properties
+echo "listeners=PLAINTEXT://:9092" >> server_2.properties
+echo "listeners=PLAINTEXT://:9093" >> server_3.properties
+echo "listeners=PLAINTEXT://:9094" >> server_4.properties
+echo "listeners=PLAINTEXT://:9095" >> server_5.properties
+echo "Broker port assigned"
+#-----------------------------------End of configurations-------------------------------------------------------#
 
 cd $KAFKA_HOME
 
+echo "starting up kafka servers"
 #Start brokers
-kafka-server-start.sh -daemon $KAFKA_HOME/config/server-1.properties
-kafka-server-start.sh -daemon $KAFKA_HOME/config/server-2.properties
-kafka-server-start.sh -daemon $KAFKA_HOME/config/server-3.properties
-kafka-server-start.sh -daemon $KAFKA_HOME/config/server-4.properties
-kafka-server-start.sh -daemon $KAFKA_HOME/config/server-5.properties
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server_1.properties
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server_2.properties
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server_3.properties
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server_4.properties
+kafka-server-start.sh -daemon $KAFKA_HOME/config/server_5.properties
+echo "kafka servers started"
