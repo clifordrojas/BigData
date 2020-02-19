@@ -1,12 +1,14 @@
 #Install Kafka with 3 servers.
 
 #Start Zookeeper
+cd $ZOOKEEPER_HOME
 bin/zkServer.sh start
 
 #Start Cli
 bin/zkCli.sh
 
 #Star kafka server
+cd $KAFKA_HOME
 bin/kafka-server-start.sh config/server.properties
 
 #Create topic
