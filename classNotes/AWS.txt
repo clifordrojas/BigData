@@ -1,0 +1,12 @@
+Tools:
+-REd
+-S3
+-EC2
+-Kenisis
+-EMR
+-Snowflake
+-IAM
+-Cloudformation
+-Glue
+-Talend
+-Capstream
