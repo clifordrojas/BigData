@@ -3,12 +3,16 @@
 #02/14-16/2020
 
 Completed:
--Completed Task 18 of automating the start up of kafka Servers
-
+-Complted Task 24{
+	Igested Data using Scala Script
+	Used Kafka to produce a data stream of API call.
+	Used Spark to create a direct kafka stream and pull data from topic "Chuck Norris"
+	Used spark to write RDD to HDFS.
+	} 
+	
 Todo:
 - Automation of Tasks
 - Task 25
-- Verify Task 24 (Find find for jar issues)
 - Task 27 (pending tables for 3 other files and import files in table using hive command)
 -Task 30
 
