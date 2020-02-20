@@ -30,3 +30,68 @@ Actions RDD's
 collect, count , coutnBY value, take top, reduce..etc
 
 
+
+Accumulator:
+- (1/2) Shared variables: The other is broadcast variable.
+ 
+Broadcast Variable: Allows programmer to keep a read-only variable cached on each machine rather than 
+	ship a copy with the task.
+
+	-Useful for giving each node, a copy of a large input dataset efficiently.
+	-Special Broadcast algorithms used to distribute them to maximize communication cost.
+	val v = Array(1, 2, 3)
+	val broadcastVar = sc.broadcast(v)
+	Always use broadcastVar instead of v so v isn't shipped and don't modify v to ensure the all 
+	nodes receive the same value of the boardcast var.
+	
+	-Max amount of data not reccomended. 
+	-Stored in cache
+
+Accumulator: Variables ued for the Aggregation of information across the executors.
+	-Needed because when Spark ships code to executors the variable become local to that executor
+	and update value is not relayed back to the driver.
+	
+	-Meaning any update done to the variable will be relayed back to the driver.
+	
+
+
+Executor: A process launched for an application on a worker node, that runs tasks and keeps data in 
+	memory or disk storage across them. Each application has its own executors.
+
+Driver Program: The process running main() and created the SparkContext
+
+
+
+Checkpointing VS Cache/Persist
+-Checking pointing stores all process and data into hdd. Allows you to keep track of transformations.
+	RDD -> Map -> CP:Sort -> Take
+-Cache/Persist: Stores the whole program and RDD into memory, hdd, both. If not enough mem, mem spill. Wait until an 
+action is taken to then Cache or persist.
+
+Implicits:
+-Class inside of spark and import methods to additional methods to do additional transformations.
+-"$" Is import columns if you have imported implicits.  ex: $"name"
+
+Windowing:
+-Map aggregate function collecting data from 3 different places you can process it as ingestion.
+
+Offset management: Used in DStreams
+-Receive Offset 
+-Commit Offset
+
+
+
+DStreams internally is characterized by a few basic properties:
+-A list of other DStreams that the DStream depends on
+-A time interval at which the DStream generates an RDD
+-A function that is used to generate an RDD after each time interval 
+
+Self Join
+-Same table do inner join. 
+
+Cross Join (Cartesian Product)
+-Every possible combination 
+
+
+
+

@@ -16,3 +16,13 @@ HBase Structure
 Supports auto sharding
 
 HBase is column oriented storage:
+
+use case class to write to HBase using spark
+
+Scala only:
+case class Name (first_name: string)
+
+write to HBase:
+use catalog 
+df.write.options(...)
+
