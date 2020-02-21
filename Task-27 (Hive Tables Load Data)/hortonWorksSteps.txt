@@ -22,8 +22,9 @@ CREATE DATABASE movies_db;
 
 #Use Table
 USE movies_db;
-
+#---------------------------Table 1---------------------------------#
 #Create Table
+DROP TABLE movie_data;
 CREATE TABLE movie_data
     ( user_id   int,
       movie_id  int,
@@ -33,12 +34,100 @@ CREATE TABLE movie_data
 ROW FORMAT DELIMITED
   FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH "/data/u.data" INTO TABLE movie_data;
 
-#Insert Data from file
-LOAD DATA LOCAL INPATH "/data/u.data" OVERWRITE INTO TABLE movie_data;
- 
+select * from movie_data;
+CREATE TABLE movie_data_parquet  ( user_id   int,
+      movie_id  int,
+      rating    int,
+      time      int
+    )
+STORED AS PARQUET;
+INSERT OVERWRITE TABLE movie_data_parquet 
+SELECT * FROM movie_data;
+
+DROP TABLE movie_data;
+SELECT * FROM movie_data_parquet;
 
 #Check MetaData
 USE DB_NAME;
 DESCRIBE FORMATTED TABLE_NAME;
+
+#------------------------------Table 2----------------------------------#
+
+DROP TABLE u_info;
+CREATE TABLE u_info
+    ( stats_table   int,
+      tables  VARCHAR(50)
+      )
+ROW FORMAT DELIMITED FIELDS 
+TERMINATED BY ' '
+STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH "/data/u.info" INTO TABLE u_info;
+select * from u_info;
+
+CREATE TABLE u_info_parquet( stats_table   int,
+      tables  VARCHAR(50)
+      )
+STORED AS PARQUET;
+INSERT OVERWRITE TABLE u_info_parquet 
+SELECT * FROM u_info;
+
+DROP TABLE u_info;
+
+#-------------------------------Table 3--------------------------------#
+DROP TABLE u_genre ;
+CREATE TABLE u_genre 
+( genre  VARCHAR(25),
+  genre_id int
+)
+ROW FORMAT DELIMITED FIELDS 
+TERMINATED BY '|'
+STORED AS TEXTFILE;
+LOAD DATA LOCAL INPATH "/data/u.genre" INTO TABLE u_genre;
+select * from u_genre ;
+
+CREATE TABLE u_genre_parquet( genre  VARCHAR(25),
+  genre_id int
+)
+
+STORED AS PARQUET;
+INSERT OVERWRITE TABLE u_genre_parquet 
+SELECT * FROM u_genre;
+
+DROP TABLE u_genre;
+
+select * from u_genre_parquet ;
+#------------------------------Table 4----------------------------------#
+DROP TABLE u_occupation;
+CREATE TABLE u_occupation 
+( occupation VARCHAR(50)
+);
+LOAD DATA LOCAL INPATH "/data/u.occupation" INTO TABLE u_occupation;
+select * from u_occupation ;
+
+CREATE TABLE u_occupation_parquet( occupation VARCHAR(50)
+)
+STORED AS PARQUET;
+INSERT OVERWRITE TABLE  u_occupation_parquet 
+SELECT * FROM  u_occupation;
+
+DROP TABLE  u_occupation;
+
+select * from  u_occupation_parquet ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
