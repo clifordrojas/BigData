@@ -11,3 +11,49 @@ Broker - maintaining the published data
 kafka cluster - have more than one broker
 
 
+
+
+
+#----------------------------------------Self Learning Notes----------------------------------------#
+Kafka allows for decoupling of data streams & systems
+
+Benefits of Kafka:
+	-Distributed
+	-Resilient
+	-Fault tolerant
+	-Horizontal Scalability {100s of brokers, Millions of msgs per second, Sub 10ms in latency}
+
+Use Cases:
+	-Messaging System
+	-Activity Tracking
+	-IOT devices
+	-App log gathering
+	-Stream processing (Kafka + Spark)
+	-De-coupling of system dependencies 
+	-Big Data Integration
+
+Kafka is ONLY USED AS A TRANSPORTATION MECHANISM!
+
+
+Producer -> Kafka Broker -> Consumer
+
+Kafka helps prevenet spighittification of messaging system.
+
+
+Kafka Relationships:
+ - one to many
+ - Many to many
+ - stream (continues data) forward/backward communication
+ - one to one
+
+#--------------------------------Fault Tolerance-------------------------------------------#
+Enable a system to continue operating properly in the event of failure of some components.
+
+Replication Factor - X amount of copies are maintained across kafka topic level.
+
+Leader & Follower Archetecture 
+Leader - Receives message, stores locally, send back acklowledgement to producer. For every partition
+	there is a leader for that. 
+Followers - Copy data from leader and do not talk to producer/consumer.
+
+ 
