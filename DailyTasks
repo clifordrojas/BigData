@@ -3,21 +3,14 @@
 #02/14-16/2020
 
 Completed:
--Completed Task 25{
-	Igested Data using Scala Script
-	Used Kafka to produce a data stream of API call.
-	Used Spark to create a Structured kafka stream and pull data from topic "Chuck Norris"
-	Used spark to write RDD to HDFS.
-	} 
--Completed Task 27{
-	Created Database
-	Created Managed Tables (4) in Hive
-	Moved Data to hive hdfs
+-Task 30 {Created database, created managed table, created 4 MySQL}
+
 	
 	
 Todo:
 - Automation of Tasks
--Task 30
+-Task 28,29,30,31,32,33,34,35,36.
+
 
 Learned:
 -Refreshed my knowledge on Kafka.

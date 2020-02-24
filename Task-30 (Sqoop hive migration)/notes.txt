@@ -7,6 +7,16 @@ hive
 hive --hiveconf hive.execution.engine=mr #-f load_data.sql
 
 #-f is run query from files: "hive -f /somepath/queries.hql"
+export ACCUMULO_HOME='/usr/hdp/2.6.5.0-292/pig/doc/api/org/apache/pig/backend/hadoop/accumulo'
+
+TODO:
+•         Create new Hive database movielens_db
+•         *create 1 managed table in Hive
+•         create 4 tables in mySQL (and insert data )
+•         *move data from mySQL tables to HDFS Hive table (already created)
+•         move data from mySQL to HDFS (Hive external tables 'maria_dev')
+•         *create new table in mySQL
+•         *move data from table back to mySQL
 
 #-------------------------------HIVE Database------------------------------#
 CREATE DATABASE movielens_db;
@@ -16,13 +26,13 @@ USE movielens_db;
 #------------------------------Hive Tables---------------------------------#
 #Create Table
 CREATE TABLE hive_data
-    ( user_id   int,
-      movie_id  int,
-      rating    int,
-      time      int
+    ( user_id   INT,
+      movie_id  INT,
+      rating    INT,
+      time      INT
     )
 ROW FORMAT DELIMITED
-  FIELDS TERMINATED BY '\t'
+FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE;
 
 CREATE TABLE u_info
@@ -39,11 +49,18 @@ CREATE TABLE u_genre
 CREATE TABLE u_occupation 
 ( occupation VARCHAR(50)
 );
+#-----------------------------Hive delete rows-------------------------------------#
+insert overwrite table movie_data_parquet 
+    select * from movie_data_parquet 
+    where user_id <> 1
+;
 
-#-----------------------------My SQL-----------------------------------------------#
+#-----------------------------MySQL-----------------------------------------------#
 #MySQL
 #Create 4 Tables in MySQL
 CREATE DATABASE cliffsql_db;
+
+USE cliffsql_db;
 
 #Table num1
 CREATE TABLE hive_data
@@ -52,17 +69,16 @@ CREATE TABLE hive_data
       rating    int,
       time      int
     );
-# 
+
 LOAD DATA LOCAL INFILE '/data/u.data' INTO TABLE hive_data FIELDS TERMINATED BY '\t';
 
 #----------------------u_info table--------------------------------------------------#
 CREATE TABLE u_info
-    ( num_users   int,
-      items  int,
-      rating    int
+    ( count   int,
+      section  VARCHAR(50)
       );
 # 
-LOAD DATA LOCAL INFILE '/data/u.info' INTO TABLE u_info FIELDS TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE '/data/u.info' INTO TABLE u_info FIELDS TERMINATED BY ' ';
   
 #----------------------u.genre--------------------------------------------------------#
 CREATE TABLE u_genre 
@@ -77,13 +93,41 @@ CREATE TABLE u_occupation
 );
 LOAD DATA LOCAL INFILE '/data/u.occupation' INTO TABLE u_occupation;
 
-#----------------------Delete rows---------------------------------------------------#
+#----------------------Delete hive table--------------------------#
+
+
+rows---------------------------------------------------#
 delete from table where column = 0;
 
 #Try to pass tables
 
-#sqoop import --connect jdbc:mysql://localhost:3306/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import --
+#cliffsql_db
 
-sqoop import --connect jdbc:mysql://localhost:3306/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import --split-by user_id --hive-table movielens_db.hive_data
+sqoop import --connect jdbc:mysql://localhost/cliffsql_db --username root -P --table hive_data --hive-import --hive-table movielens_db.hive_data -m 1
+
+#Import to hive table 
+sqoop import --connect jdbc:mysql://localhost/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import  --hive-table movielens_db.hive_data -m 1
+
+#Run check 
+hive
+use movielens_db;
+select * from hive_data limit 10;
+
+#Remove data if failure
+hdfs dfs -rm -r /user/maria_dev/hive_data
+
+#Update hive-site.xml
+<property>
+   <name>hive.warehouse.subdir.inherit.perms</name>
+   <value>false</value>
+</property>
+
+
+
+
+
+#-----------------------------Notes for one on one-----------------------------#
+
+sqoop command not functional inserts null values 
 
 
