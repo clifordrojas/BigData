@@ -3,7 +3,6 @@
 #02/14-16/2020
 
 Completed:
--Task 30 {Created database, created managed table, created 4 MySQL}
 
 	
 	
@@ -13,6 +12,5 @@ Todo:
 
 
 Learned:
--Refreshed my knowledge on Kafka.
--Improved my understanding and use cases of kafka (messaging system: sub 10ms latency)
--Leader/Follower structure. 
+- API Pull
+
