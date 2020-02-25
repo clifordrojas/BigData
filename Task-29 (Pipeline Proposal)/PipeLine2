@@ -1,0 +1,27 @@
+Pipeline Tools:
+	Api (eBay)
+	Spark
+	Hive 
+	Tablou
+API:
+	eBay
+
+Auction Companies:
+	Amazon
+	eBay
+	Independent Stores
+
+Buisness Goal:
+
+As online sales increase the amount of tech available in countries like the US.
+is abundant. Many consumers are buying phones every year or two years. As the cost of these
+goods go up many might seek to get some of their money back after one-two years and sell online.
+eBay provides an excellent source of data that can be used to gather information about particular products
+and industries. Using machine learning we can see what products retain their value and what products
+sell the most online. For example cloths might be a bad secondary market but computers thrieve. 
+
+Daily Taks:
+Days 1,2,3: Gather the required Data
+Days 4,5,6: Clean the Data and process what information is needed.
+Days 7,8: Clean up code and store into hive.
+Days 9,10 Implement streaming for auctions.

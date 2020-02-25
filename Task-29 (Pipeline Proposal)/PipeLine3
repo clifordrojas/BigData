@@ -1,0 +1,26 @@
+Pipeline Tools:
+	Api (eBay)
+	Spark
+	Hive 
+	Tablou
+API:
+	Rent Estimate by moneals
+
+Rental Companies:
+	Century 21
+	AirBnB	
+	Goverment
+
+Buisness Goal:
+
+It is well known that the cost of living has been going up and that the income/rent ratio is 
+higher than in was in previous decades. The cost of renting is something that everyone is interested in
+buisness want to know the value of the homes and the rates they can maximize their profits. 
+Companies like century 21 can use this data get key information about local neighborhoods and perform 
+some analysis to determine what rates would get enought attention and close a rental agreement. 
+
+
+Daily Taks:
+Days 1,2,3: Gather the data for 3 nighborhoods: approximately 30 homes.
+Days 4,5,6: Clean the Data and process by merging columns to get price/sqFt in clusters of 15 mi.
+Days 7,8: Store the data in hive: estimate, listings, and location.

@@ -1,0 +1,27 @@
+Pipeline Tools:
+	Api (eBay)
+	Kafka (Multi-Topic)
+	Spark
+	Hive 
+	Tablou
+API:
+	Coinpaprika by ibrazciszewski
+
+Rental Companies:
+	Coinbase
+	Binance
+
+Buisness Goal:
+Crypto currency has had a downfall for investor but while lucratic and not commercially adopted
+there are many companies and individuals who still invest and secure their crypto investments.
+This API allows me to get Twitter and event information that can help determine up and coming 
+coins a.k.a popular coins. This data can be useful to companies like JP Morgan and others involved
+in the crypto currency network. The api also has exchange rates and 1 day of historical data. 
+This pipeline will leverage the twitter information per coin and compare that to their price. 
+
+
+Daily Taks:
+Days 1,2,3: Gather twitter and 1 day historical data.Stream using kafka to make mutliple topics related to crypto.
+ 
+Days 4,5,6: Clean the Data and process data to see if theres a connection between price and retweet count.
+Days 7,8: Store the data in hive: Crypto Currency, Price, Retweet, Compare to BitCoin.
