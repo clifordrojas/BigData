@@ -47,9 +47,14 @@ if __name__ == '__main__':
     # for i in weed_df.schema.fieldNames():
     #     print(i)
 
+    print(weed_df.count())
+    print(producer_df.count())
 
     weed_df = weed_df.withColumn('Producer_name',weed_df['producer']["name"]).withColumn('Producer_phone',weed_df['producer']["phone"])
 
+    sorted_weed_df = weed_df.orderBy(functions.col("type"))
+
     join1 = producer_df.join(weed_df).where(producer_df["name"] == weed_df["brand"])
 
+    sorted_weed_df.show(250)
     join1.show()
