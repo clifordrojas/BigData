@@ -46,7 +46,10 @@ if __name__ == '__main__':
     # weed_df.select(functions.col("name"), functions.map_values(functions.col("producer")).show()
     # for i in weed_df.schema.fieldNames():
     #     print(i)
-    weed_df.withColumn('Producer2',weed_df['producer']["ccc"]).show()
 
-    weed_df.show()
-    producer_df.show()
+
+    weed_df = weed_df.withColumn('Producer_name',weed_df['producer']["name"]).withColumn('Producer_phone',weed_df['producer']["phone"])
+
+    join1 = producer_df.join(weed_df).where(producer_df["name"] == weed_df["brand"])
+
+    join1.show()
