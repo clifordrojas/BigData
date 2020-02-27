@@ -1,0 +1,12 @@
+Part 1: Spark
+-RDD Lineage
+	RDD lineage is nothing but the graph of all the parent RDDs of an RDD.
+	RDD dependency graph: output of applying transformations to the spark.
+	Creates Logical and Physical Plan
+	
+-Checkpointing
+-Cache/persist
+-Broadcast vars
+-Accumulators
+-Implicits
+
