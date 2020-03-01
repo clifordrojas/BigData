@@ -1,0 +1,37 @@
+Daily Task Structure
+
+Due by: As soon as possible but Mandatory by 8:45. 
+				^^ Takes priority over what you're doing! :)
+
+#-------------------------------Why change our structure-----------------------#
+Below is the structured required to submit daily tasks. This structure will
+allow and enforce a nice and neat presentation of individuals issues.
+Also, this can easily be parsed using python/spark. Do your best to to stick 
+to it so we can later process it maybe we can find a trend of what people worked
+on or had difficulties with. I will ask you to fix it if I notice discrepancies.
+
+#-----------------------------------Schema for Daily Task/Bullet points----------#
+
+Name: First Name, Last Initial. //Cliford R.
+Date: March 01, 2020 //Month spelled out| day of month| full year 2020 not 20
+
+Completed: 
+-Task XX: Ingested Data, Processed Data W/ Spark, Stored in Hive Warehouse.
+-Task YY: Installed Cassandra
+-Task ZZ: Completed 6/10 Subtask
+
+Todo:
+-Capstone Optimizations 
+-Task 10,11,12,13..etc
+
+Learned:
+-SQL
+-Hive External Tables
+
+Else:
+-Did not complete any tasks because I'm done.
+-Did not complete any tasks because I'm currently working on capstone pipeline.
+
+
+  
+
