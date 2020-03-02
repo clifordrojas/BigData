@@ -25,6 +25,7 @@ Please follow the commands to execute properly.
 8)Remove to clean 
 -hive -e "drop table weed"
 -source remove_hdfs_data.sh
+-
 
 
 
