@@ -1,16 +1,19 @@
-#Cliford Rojas
-#EnhanceIT
-#02/14-16/2020
+Name: Cliford, Rojas 
+Date: March 02, 2020 
 
-Completed:
+Completed: 
+-Task 32: Installed Hive, Read JSON, Write to table.
+-Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Complete. 
 
-	
-	
 Todo:
-- Automation of Tasks
--Task 28,29,30,31,32,33,34,35,36.
-
+-Capstone Optimizations, Airflow DAG, Scala Jar Executable. PowerPoint.
+-Task 30,31,33,34,35
 
 Learned:
-- API Pull
+-Spark-Submit Structure
+-Hive External Tables
+
+Else:
+null
+
 
