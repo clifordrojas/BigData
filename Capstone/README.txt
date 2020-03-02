@@ -13,7 +13,8 @@ Please follow the commands to execute properly.
 4)Move Data: move_data_to_hdfs
 -Move ingested data to hdfs
 
-5)Run Spark Processing Scala: pending
+5)Run Spark Processing Scala: process_data.sh
+
 
 6)Load Data: load_data_hive.sh
 -loads hdfs data into hive table
