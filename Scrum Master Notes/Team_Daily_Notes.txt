@@ -1,0 +1,103 @@
+#-------------------------------------------Cliford R.----------------------------------#
+Name: Cliford, Rojas 
+Date: March 02, 2020 
+
+Completed: 
+-Task 32: Installed Hive, Read JSON, Write to table.
+-Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Core Complete. 
+
+Todo:
+-Capstone Optimizations, Airflow DAG, Scala Jar Executable. PowerPoint.
+-Task 30,31,33,34,35
+
+Learned:
+-Spark-Submit Structure
+-Hive External Tables
+
+Else:
+null
+
+#----------------------------------------------Alicja L.---------------------------------#
+Scrum Meeting Structure
+
+Start: 8:15
+
+Current Progress:Loaded data into dataframe
+
+Automated data ingestion
+
+Issues:Hive - need to try to reinstall
+Spark/Kafka Producer - trying to get data in correct format
+
+
+What have you done to solve the above issues?Debugging
+
+
+Ex: "I noticed many are working on Task-XX and I already completed it and have some extra time
+to help.
+
+#--------------------------------------------Jeffery A.---------------------------------#
+Name: Jeff A.
+Date: March 2, 2020 
+Completed:   
+Task 34: Load data to Cassandra
+
+Todo:
+Complete Capstone
+
+Learned:    
+Reading: PySpark, Cassandra, Scala
+Else: 
+
+#------------------------------------------Jerry H.-------------------------------------------#
+Name: jerry h
+Date: march 02, 2020
+
+completed:
+download data and clean it on hortonworks
+
+todo:
+put data in hive and join tables
+
+learned:
+explode columns
+else:
+none
+
+#----------------------------------------Caleb D.------------------------------------------#
+Name: Caleb, D. 
+Date: March 02, 2020 
+
+Completed: 
+
+Todo:
+-Capstone Optimizations  
+-load dataframe into cassandra from spark
+-Install Oize
+-test bashscripts/Oize
+
+Learned:
+-Install cassandra
+-Install Hive
+-Spark SQL joins
+
+Else:
+-No tasks just working on capstone pipeline.
+	-redid simplified Kafka producer/consumer 
+	-did spark processing for capstone
+	-installed hive
+	-installed cassandrea 	
+#-----------------------------------Miya-------------------------------------------------------#
+Name: Weiyao(Miya) Ma
+Date: March 02, 2020
+
+Completed:
+-Task 31(a): Install Hive
+-Task 36: capstone project demo
+
+Todo:
+-Capstone Optimizations
+-Make SlidesLearned:
+-Move file from hdfs to local
+-Hornworks has python 2.7 but not 3.7
+

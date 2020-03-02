@@ -3,7 +3,7 @@ Date: March 02, 2020
 
 Completed: 
 -Task 32: Installed Hive, Read JSON, Write to table.
--Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Complete. 
+-Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Core Complete. 
 
 Todo:
 -Capstone Optimizations, Airflow DAG, Scala Jar Executable. PowerPoint.

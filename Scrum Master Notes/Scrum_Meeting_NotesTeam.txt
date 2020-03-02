@@ -1,0 +1,62 @@
+
+#----------------------------------------------Jerry------------------------------------#
+Jerry H.
+progress:
+Working import data to hive.
+
+issues:
+spark session to import into hive
+about 1 hr trying to fix it.
+
+capstone:
+-Capstone a little behind schedule | On track: Yes
+
+#----------------------------------------------Alicja-----------------------------------#
+Alicja
+progress:
+Got data ingestion automated. 
+
+issues:
+Df in spark not reading data like she wanted. 
+about 2 hrs trying to fix it
+
+Capstone: Currently in processing. On track: Yes.
+
+#---------------------------------------------Miya--------------------------------------#
+Miya
+progress:
+Finished capstone, producer for more data. Saved data to hdfs and load data from horton works
+table.
+
+issues:
+Hive not working. Horton works cannot run code because python 2.
+about 3hrs working on this problem.
+
+Capstone: Completed but with issues. 
+#-------------------------------------------Jeff-----------------------------------------#
+Jeff
+progress:
+Task 34 completed. Mostly worked on capstone.
+
+issues:
+No issues
+
+Capstone: RSS Feed into datawarehouse. On track status: Yes.
+#------------------------------------------Caleb------------------------------------------#
+
+progress:
+No Tasks done just working on capstone. Installed Cassandra.
+
+Issues: 
+Way he installed cassandra. Incorrectly installed cassandra.
+about 2 hrs trying to fix that. 
+
+Capstone: Data warehousing. On tack status: Yes. 
+#-----------------------------------------Cliford R.-------------------------------------#
+Worked on capstone. Completed Datawarehousing.
+
+Issues:
+Spark-submit to run scala processing
+about 2 hrs trying to run it. 
+
+Capstone: Automation. On tack status: yes. 
