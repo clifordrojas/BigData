@@ -1,12 +1,6 @@
-import requests
-from io import StringIO
 import json
-from Weed import Weed
-from pyspark import SparkContext, SparkConf
-from pyspark.sql import  SparkSession,Row,functions
-from pyspark.rdd import RDD
-
-import pandas as pd
+import subprocess
+import requests
 
 
 def read_neobi_weed():
@@ -55,10 +49,16 @@ if __name__ == '__main__':
     json_data = json.loads(data.text)
     create_local_weed(json_data)
 
-    # data = read_neobi_producer(5)
-    # json_data = json.loads(data.text)
-    # create_local_file_producer(json_data)
-    # #
+    data = read_neobi_producer()
+    json_data = json.loads(data.text)
+    create_local_file_producer(json_data)
+
+    # bash_command = 'hadoop fs -copyFromLocal neobi_api_producer.json /data'
+    # process = subprocess.Popen(bash_command.split(), stdout=subprocess.PIPE)
+    # output, error = process.communicate()
+
+
+
     # file_name = "neobi_api"
     # data = read_file_json(file_name)
 
