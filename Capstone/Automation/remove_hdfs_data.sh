@@ -1,5 +1,5 @@
 #!/bash/sh
-
+cd
 #Remove data 
 hdfs dfs -rm -r /user/hive/warehouse/w*
 

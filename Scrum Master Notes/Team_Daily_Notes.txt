@@ -1,103 +1,136 @@
 #-------------------------------------------Cliford R.----------------------------------#
 Name: Cliford, Rojas 
-Date: March 02, 2020 
+Date: March 03, 2020 
 
 Completed: 
--Task 32: Installed Hive, Read JSON, Write to table.
--Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Core Complete. 
+-Task CAP: Automation, Spark-Submit, Powerpoint.
 
 Todo:
--Capstone Optimizations, Airflow DAG, Scala Jar Executable. PowerPoint.
 -Task 30,31,33,34,35
 
 Learned:
--Spark-Submit Structure
--Hive External Tables
+-Currently Reading book about apache NiFi.Appears to be an automation tool for managing sys
+dataflow issues.
 
 Else:
 null
 
 #----------------------------------------------Alicja L.---------------------------------#
-Scrum Meeting Structure
+Name: Alicja L. .
 
-Start: 8:15
-
-Current Progress:Loaded data into dataframe
-
-Automated data ingestion
-
-Issues:Hive - need to try to reinstall
-Spark/Kafka Producer - trying to get data in correct format
-
-
-What have you done to solve the above issues?Debugging
-
-
-Ex: "I noticed many are working on Task-XX and I already completed it and have some extra time
-to help.
-
-#--------------------------------------------Jeffery A.---------------------------------#
-Name: Jeff A.
-Date: March 2, 2020 
-Completed:   
-Task 34: Load data to Cassandra
-
-Todo:
-Complete Capstone
-
-Learned:    
-Reading: PySpark, Cassandra, Scala
-Else: 
-
-#------------------------------------------Jerry H.-------------------------------------------#
-Name: jerry h
-Date: march 02, 2020
-
-completed:
-download data and clean it on hortonworks
-
-todo:
-put data in hive and join tables
-
-learned:
-explode columns
-else:
-none
-
-#----------------------------------------Caleb D.------------------------------------------#
-Name: Caleb, D. 
-Date: March 02, 2020 
+Date: March 03, 2020 
 
 Completed: 
 
+- read data from API / Kafka producer line by line to Spark
+
+- loaded data into Hive table 
+
+- Started airflow automation 
+
 Todo:
--Capstone Optimizations  
--load dataframe into cassandra from spark
--Install Oize
--test bashscripts/Oize
+
+- visualization 
+
+- 
 
 Learned:
--Install cassandra
--Install Hive
--Spark SQL joins
+
+- :) 
 
 Else:
--No tasks just working on capstone pipeline.
-	-redid simplified Kafka producer/consumer 
-	-did spark processing for capstone
-	-installed hive
-	-installed cassandrea 	
-#-----------------------------------Miya-------------------------------------------------------#
-Name: Weiyao(Miya) Ma
-Date: March 02, 2020
 
-Completed:
--Task 31(a): Install Hive
--Task 36: capstone project demo
+- Almost on track
+
+
+#--------------------------------------------Jeffery A.---------------------------------#
+Name: Jeff A.
+
+Date: March 03, 2020 
+
+Completed: 
+
+    Capstone Presentation
 
 Todo:
--Capstone Optimizations
--Make SlidesLearned:
--Move file from hdfs to local
--Hornworks has python 2.7 but not 3.7
+
+    Give Preliminary Capstone Presentation
+
+    Make Capstone Presentation changes based on feedback
+
+    Mock Interview
+
+Learned:
+
+    It rains a lot in Georgia!
+
+Else:
+
+#------------------------------------------Jerry H.-------------------------------------------#
+Name: Jerry L.
+Date: March 03, 2020
+
+Completed: 
+-power point for capstone
+
+Todo:
+-Capstone Optimizations 
+
+Learned:
+-hive
+
+Else:
+-almost finish my capstone
+
+#----------------------------------------Caleb D.------------------------------------------#
+Name: Caleb, D. 
+
+Date: March 03, 2020 
+
+Completed: 
+
+Todo:  
+
+-load parquet to hive (fix metastore)
+
+-automate bashscripts/airflow
+
+Learned:
+
+-Install Hive (the correct way)
+
+-hive metastore
+
+Else:
+
+-No tasks just working on capstone pipeline.
+
+    -installed hive
+
+    -created table in hive
+
+#-----------------------------------Miya-------------------------------------------------------#
+Name: Weiyao(Miya) Ma
+
+Date: March 03, 2020
+
+Completed:
+
+-Task 31(a): Installed Hive
+
+-Task 36: Capstone project
+
+Todo:
+
+-Capstone optimizations
+
+-Make Slides
+
+Learned:
+
+-Load data from hdfs to hive table
+
+-Spark submit 
+
+-Automate capstone project
 

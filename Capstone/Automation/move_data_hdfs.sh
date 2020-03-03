@@ -1,5 +1,5 @@
 #!/bash/sh
-
+cd
 cd /home/desktop/Desktop/BigData/Capstone/Ingestion/
 
 hdfs dfs -mkdir /user/desktop/

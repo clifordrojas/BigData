@@ -1,62 +1,58 @@
 
 #----------------------------------------------Jerry------------------------------------#
-Jerry H.
-progress:
-Working import data to hive.
+Completed:
+-Kafka Streaming Consumer
+-Airflow
+Issues:
+-Cannot install Apache-airflow
+-Kafka Streaming (Invokation Target Exception)
+Working on the issues for about 2 hrs.
 
-issues:
-spark session to import into hive
-about 1 hr trying to fix it.
-
-capstone:
--Capstone a little behind schedule | On track: Yes
+Capstone: Automation is not complete and would like kafka to function. On-track: Behind
 
 #----------------------------------------------Alicja-----------------------------------#
-Alicja
-progress:
-Got data ingestion automated. 
-
-issues:
-Df in spark not reading data like she wanted. 
-about 2 hrs trying to fix it
-
-Capstone: Currently in processing. On track: Yes.
-
-#---------------------------------------------Miya--------------------------------------#
-Miya
-progress:
-Finished capstone, producer for more data. Saved data to hdfs and load data from horton works
-table.
-
-issues:
-Hive not working. Horton works cannot run code because python 2.
-about 3hrs working on this problem.
-
-Capstone: Completed but with issues. 
-#-------------------------------------------Jeff-----------------------------------------#
-Jeff
-progress:
-Task 34 completed. Mostly worked on capstone.
-
-issues:
-No issues
-
-Capstone: RSS Feed into datawarehouse. On track status: Yes.
-#------------------------------------------Caleb------------------------------------------#
-
-progress:
-No Tasks done just working on capstone. Installed Cassandra.
-
-Issues: 
-Way he installed cassandra. Incorrectly installed cassandra.
-about 2 hrs trying to fix that. 
-
-Capstone: Data warehousing. On tack status: Yes. 
-#-----------------------------------------Cliford R.-------------------------------------#
-Worked on capstone. Completed Datawarehousing.
+Completed:
+-Fixing data reading properly. 
+-Loaded hive
+-Airflow 
 
 Issues:
-Spark-submit to run scala processing
-about 2 hrs trying to run it. 
+-Visualization
 
-Capstone: Automation. On tack status: yes. 
+Capstone: Visualization, On-tack: Almost done
+
+#---------------------------------------------Miya--------------------------------------#
+Completed:
+-Successfully loaded data into hive
+-Automated everything (Bash)
+-Working on slide
+
+Issues:
+
+Capstone: Complete. 
+ 
+#-------------------------------------------Jeff----------------------------------------#
+Completed:
+-Capstone
+Issues:
+
+Capstone: Capstone. 
+
+#------------------------------------------Caleb----------------------------------------#
+Completed:
+-Write as parquet
+-Installed Hive
+
+Issues:
+-Load data into hive
+
+Capstone: Automation, Datawarehousing. On-track: On-track
+
+#-----------------------------------------Cliford---------------------------------------#
+Completed: 
+-Capstone Project (Powerpoint,Automation,Testing)
+
+Issues:
+None 
+
+Capstone: Completed.
