@@ -1,58 +1,59 @@
 
 #----------------------------------------------Jerry------------------------------------#
 Completed:
--Kafka Streaming Consumer
--Airflow
-Issues:
--Cannot install Apache-airflow
--Kafka Streaming (Invokation Target Exception)
-Working on the issues for about 2 hrs.
+-Captone
 
-Capstone: Automation is not complete and would like kafka to function. On-track: Behind
+Issues:
+-Cannot write table directly to hive.
+-In-progress presentation.
+
+Capstone: Complete On-track: Yes, Complete.
 
 #----------------------------------------------Alicja-----------------------------------#
 Completed:
--Fixing data reading properly. 
--Loaded hive
--Airflow 
+-Capstone complete. 
+-Presentation.
 
 Issues:
--Visualization
+-Airflow not running
 
-Capstone: Visualization, On-tack: Almost done
+Capstone: Complete. On-track: Yes, Complete with Airflow not functional.
 
 #---------------------------------------------Miya--------------------------------------#
 Completed:
--Successfully loaded data into hive
--Automated everything (Bash)
--Working on slide
+-Presentation Complete.
+
 
 Issues:
+-Hive issues. Can't query this morning.
 
 Capstone: Complete. 
  
 #-------------------------------------------Jeff----------------------------------------#
 Completed:
 -Capstone
+-Presentation 
+-Read,worked on hacker rank stuff.
+
 Issues:
 
-Capstone: Capstone. 
+Capstone: Capstone. On-track: Complete.
 
 #------------------------------------------Caleb----------------------------------------#
 Completed:
--Write as parquet
--Installed Hive
+-Pipeline complete except automation.
 
 Issues:
--Load data into hive
+-Working on slides
 
-Capstone: Automation, Datawarehousing. On-track: On-track
+Capstone: Automation: Needs work. On-track: On-track
 
 #-----------------------------------------Cliford---------------------------------------#
 Completed: 
 -Capstone Project (Powerpoint,Automation,Testing)
+-Updated powerpoint slides
 
 Issues:
-None 
+-Need work on my elevator speach 
 
 Capstone: Completed.

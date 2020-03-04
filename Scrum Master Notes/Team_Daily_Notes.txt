@@ -1,136 +1,102 @@
 #-------------------------------------------Cliford R.----------------------------------#
 Name: Cliford, Rojas 
-Date: March 03, 2020 
+Date: March 04, 2020 
 
 Completed: 
--Task CAP: Automation, Spark-Submit, Powerpoint.
+-Capstone Project & Presentation Slides
 
 Todo:
 -Task 30,31,33,34,35
 
 Learned:
--Currently Reading book about apache NiFi.Appears to be an automation tool for managing sys
-dataflow issues.
+-None
 
 Else:
-null
+Helped team members get hive working and understanding of df.write table into hive. 
 
 #----------------------------------------------Alicja L.---------------------------------#
-Name: Alicja L. .
-
-Date: March 03, 2020 
+Daily TasksName: Alicja L
+Date: March 04, 2020 
 
 Completed: 
-
-- read data from API / Kafka producer line by line to Spark
-
-- loaded data into Hive table 
-
-- Started airflow automation 
+- successfully ran bash automation 
+- loaded new data into hive 
 
 Todo:
-
-- visualization 
-
-- 
+- hql files for hive query
+- setting up different airport for ingestion
+- have spark process different kafka topics in parallell 
+- develop a star schema in hive
 
 Learned:
-
-- :) 
-
-Else:
-
-- Almost on track
+- need to add space in airflow after bash command
+- ran run_all.sh bash automation for first timeElse:
+- ready to present
 
 
 #--------------------------------------------Jeffery A.---------------------------------#
 Name: Jeff A.
-
-Date: March 03, 2020 
-
+Date: March 04, 2020 
 Completed: 
-
-    Capstone Presentation
-
-Todo:
-
-    Give Preliminary Capstone Presentation
-
-    Make Capstone Presentation changes based on feedback
-
-    Mock Interview
-
+    Capstone Presentation Slides Update
+    Read chapter in PySpark book
+    Worked on super simple Scala coding challenges
+Todo (After Capstone Presentation):
+    Minor changes to Capstone requested by J.D.
+        (Add __main__ to python code)
+        (Call createdb.sh script before automation script)
+    Marketing Assessment Prep
 Learned:
-
-    It rains a lot in Georgia!
-
-Else:
+    PySpark can be used for data cleaning and gathering info about data, not just
+        transformations.
+    Scala syntatic sugar rocks!
 
 #------------------------------------------Jerry H.-------------------------------------------#
-Name: Jerry L.
-Date: March 03, 2020
+Name: Jerry H
+Date: March 04, 2020 
 
 Completed: 
--power point for capstone
+-capstone
 
 Todo:
--Capstone Optimizations 
+-presentation
 
 Learned:
--hive
+none
 
 Else:
--almost finish my capstone
+none
 
 #----------------------------------------Caleb D.------------------------------------------#
 Name: Caleb, D. 
 
-Date: March 03, 2020 
+Date: March 04, 2020 
 
-Completed: 
+Completed:
 
-Todo:  
+-Hive  
 
--load parquet to hive (fix metastore)
+Todo:   
 
--automate bashscripts/airflow
+-Improve slides
+
+-Fix bashscripts
 
 Learned:
-
--Install Hive (the correct way)
-
--hive metastore
 
 Else:
 
 -No tasks just working on capstone pipeline.
 
-    -installed hive
-
-    -created table in hive
+    -installed/fixed hive
 
 #-----------------------------------Miya-------------------------------------------------------#
 Name: Weiyao(Miya) Ma
-
-Date: March 03, 2020
+Date: March 04, 2020
 
 Completed:
-
--Task 31(a): Installed Hive
-
--Task 36: Capstone project
+-Task 36: capstone project 
 
 Todo:
-
--Capstone optimizations
-
--Make Slides
-
-Learned:
-
--Load data from hdfs to hive table
-
--Spark submit 
-
--Automate capstone project
+-Capstone Presentation
 
