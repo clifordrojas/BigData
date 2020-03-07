@@ -1,57 +1,53 @@
 
 #----------------------------------------------Jerry------------------------------------#
 Completed:
--Captone
+-Studied for Market assessment.
 
 Issues:
--Cannot write table directly to hive.
--In-progress presentation.
+-None
 
 Capstone: Complete On-track: Yes, Complete.
 
 #----------------------------------------------Alicja-----------------------------------#
 Completed:
--Capstone complete. 
--Presentation.
+-Studied for Market assessment. 
 
 Issues:
--Airflow not running
+- None
 
 Capstone: Complete. On-track: Yes, Complete with Airflow not functional.
 
 #---------------------------------------------Miya--------------------------------------#
 Completed:
--Presentation Complete.
+-Studied for Market assessment. 
 
 
 Issues:
--Hive issues. Can't query this morning.
+-None.
 
 Capstone: Complete. 
  
 #-------------------------------------------Jeff----------------------------------------#
 Completed:
--Capstone
--Presentation 
--Read,worked on hacker rank stuff.
+-Studied for Market assessment. 
 
 Issues:
+-None
 
 Capstone: Capstone. On-track: Complete.
 
 #------------------------------------------Caleb----------------------------------------#
 Completed:
--Pipeline complete except automation.
+-Studied for Market assessment. 
 
 Issues:
--Working on slides
+-Trying to fix spark-submit
 
-Capstone: Automation: Needs work. On-track: On-track
+Capstone: Trying to fix spark-submit. On-track: On-track
 
 #-----------------------------------------Cliford---------------------------------------#
 Completed: 
--Capstone Project (Powerpoint,Automation,Testing)
--Updated powerpoint slides
+-Studied for Market assessment.
 
 Issues:
 -Need work on my elevator speach 

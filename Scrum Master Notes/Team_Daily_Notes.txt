@@ -1,9 +1,9 @@
 #-------------------------------------------Cliford R.----------------------------------#
 Name: Cliford, Rojas 
-Date: March 04, 2020 
+Date: March 06, 2020 
 
 Completed: 
--Capstone Project & Presentation Slides
+-Prepping for Market Assesement.
 
 Todo:
 -Task 30,31,33,34,35
@@ -12,57 +12,49 @@ Learned:
 -None
 
 Else:
-Helped team members get hive working and understanding of df.write table into hive. 
+-None
 
 #----------------------------------------------Alicja L.---------------------------------#
-Daily TasksName: Alicja L
-Date: March 04, 2020 
-
+Daily Tasks
+Name: Alicja L
+Date: March 06, 2020 
 Completed: 
-- successfully ran bash automation 
-- loaded new data into hive 
-
+- study for marketing assessment 
+- marketing assessment
+- slept more lol 
 Todo:
-- hql files for hive query
-- setting up different airport for ingestion
-- have spark process different kafka topics in parallell 
-- develop a star schema in hive
-
+- tasks 30 + 
+- update github with capstone files  
 Learned:
-- need to add space in airflow after bash command
-- ran run_all.sh bash automation for first timeElse:
-- ready to present
+- 
+Else:
+- ready to continue  
 
 
 #--------------------------------------------Jeffery A.---------------------------------#
 Name: Jeff A.
-Date: March 04, 2020 
+Date: March 06, 2020 
 Completed: 
-    Capstone Presentation Slides Update
-    Read chapter in PySpark book
-    Worked on super simple Scala coding challenges
-Todo (After Capstone Presentation):
-    Minor changes to Capstone requested by J.D.
-        (Add __main__ to python code)
-        (Call createdb.sh script before automation script)
-    Marketing Assessment Prep
+    Market Assessment 
+Todo:
+    Prep for Market ReAssessment
 Learned:
-    PySpark can be used for data cleaning and gathering info about data, not just
-        transformations.
-    Scala syntatic sugar rocks!
+    Use STAR method in interviews
+    Play investigative reporter during interviews
+Else:
 
 #------------------------------------------Jerry H.-------------------------------------------#
 Name: Jerry H
-Date: March 04, 2020 
+Date: March 06, 2020
 
 Completed: 
--capstone
+studying about tez
 
 Todo:
--presentation
+-Capstone Optimizations 
 
 Learned:
-none
+tez
 
 Else:
 none
@@ -70,33 +62,30 @@ none
 #----------------------------------------Caleb D.------------------------------------------#
 Name: Caleb, D. 
 
-Date: March 04, 2020 
+Date: March 06, 2020 
 
 Completed:
 
--Hive  
+-marketing interview
 
 Todo:   
 
--Improve slides
-
--Fix bashscripts
+-Fix automation 
 
 Learned:
 
+-more about profile
+
+-more technical review/code
+
 Else:
 
--No tasks just working on capstone pipeline.
-
-    -installed/fixed hive
-
+-No tasks just working on profile and review.
 #-----------------------------------Miya-------------------------------------------------------#
 Name: Weiyao(Miya) Ma
-Date: March 04, 2020
-
+Date: March 06, 2020
 Completed:
--Task 36: capstone project 
-
+-Final evaluation 
 Todo:
--Capstone Presentation
+-study study study!!!
 
