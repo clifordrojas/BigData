@@ -1,0 +1,19 @@
+CAP Theorem also known as Brewer's Theorem states that it is impossible for a distributed data
+store to simultaneously provide more than two out of the three gurantees.
+
+Pillars of CAP Theorem are:
+Consistency: Every read receives the most recent write 
+Availability : Every request received a non error request and the most recent write.
+Partition tolerence: System continues to operate despite failures.
+
+
+Basically it means that because distributed data is "distributed" the data will have latency 
+between nodes as those nodes must read/write amongst eachother to replicate the data and ensure
+the data are the same.
+
+"A" is paritioned in Nodes: 1,2,3:
+currently nodes 1,2,3 have stored "B"
+
+If a is being written in node 1,2 and call is made and read from node 3
+the returning result will be "B" and not the most up to date "A"
+

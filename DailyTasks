@@ -1,17 +1,18 @@
 Name: Cliford, Rojas 
-Date: March 02, 2020 
+Date: March 08, 2020 
 
 Completed: 
--Automation: Task(s): 1,2,3,4
--Task CAP: Ingestion, Processing,Datawarehouse. Pipeline Core Complete. 
+-Automation: Task(s): 1,2,3,4,12,13,14
+                             ^6-11 Already completed 
 
 Todo:
 -Capstone Optimizations, Airflow DAG, Scala Jar Executable. PowerPoint.
 -Task 30,31,33,34,35
 
 Learned:
--Spark-Submit Structure
--Hive External Tables
+-Read more about NiFi and how it it can deal with data backpressure.3 ways
+-Revisited SQL and CAP theorem. Added notes in Task-5... folder. 
+
 
 Else:
 null

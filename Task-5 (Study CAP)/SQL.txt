@@ -1,0 +1,26 @@
+SQL: Structed Query Language 
+
+Standard language for RDMS (relation database management systems)
+RDMS DB: MySQL, Oracle, Sybase, Postgress.
+
+SQL Architecture:
+     Query
+	|
+	|
+	|
+     Language processor <----Parser+ optimizer
+	|
+	|
+	|
+     DBMS Engine <----File/Transaction Manager
+	|
+	|
+	|	
+     Physical DB
+
+Table - Excel like file consist of Rows (record) and COlumns (fields)
+
+Database Normalization:
+-Eliminate Redundant Data
+-Dependencies make sense
+1NF,2NF,3NF
