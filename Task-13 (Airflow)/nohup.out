@@ -1071,3 +1071,417 @@ Running %s on host %s <TaskInstance: neobi_dependencies.run_dependency 2020-03-0
 [2020-03-08 17:35:30,367] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
 [2020-03-08 17:35:31 -0400] [3254] [INFO] Handling signal: ttou
 [2020-03-08 17:35:31 -0400] [32341] [INFO] Worker exiting (pid: 32341)
+[2020-03-08 17:36:01 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:36:01 -0400] [665] [INFO] Booting worker with pid: 665
+[2020-03-08 17:36:01,693] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:36:01,694] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:36:02 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:36:02 -0400] [32534] [INFO] Worker exiting (pid: 32534)
+[2020-03-08 17:36:32 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:36:32 -0400] [721] [INFO] Booting worker with pid: 721
+[2020-03-08 17:36:33,072] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:36:33,073] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:36:33 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:36:33 -0400] [416] [INFO] Worker exiting (pid: 416)
+[2020-03-08 17:37:04 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:37:04 -0400] [1233] [INFO] Booting worker with pid: 1233
+[2020-03-08 17:37:04,628] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:37:04,628] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:37:05 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:37:05 -0400] [522] [INFO] Worker exiting (pid: 522)
+[2020-03-08 17:37:35 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:37:35 -0400] [1277] [INFO] Booting worker with pid: 1277
+[2020-03-08 17:37:35,918] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:37:35,919] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:37:36 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:37:36 -0400] [612] [INFO] Worker exiting (pid: 612)
+[2020-03-08 17:38:07 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:38:07 -0400] [1316] [INFO] Booting worker with pid: 1316
+[2020-03-08 17:38:07,377] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:38:07,377] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:38:08 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:38:08 -0400] [665] [INFO] Worker exiting (pid: 665)
+[2020-03-08 17:38:38 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:38:38 -0400] [1348] [INFO] Booting worker with pid: 1348
+[2020-03-08 17:38:38,700] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:38:38,701] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:38:39 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:38:39 -0400] [721] [INFO] Worker exiting (pid: 721)
+[2020-03-08 17:39:09 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:39:09 -0400] [1378] [INFO] Booting worker with pid: 1378
+[2020-03-08 17:39:10,011] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:39:10,012] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:39:10 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:39:10 -0400] [1233] [INFO] Worker exiting (pid: 1233)
+[2020-03-08 17:39:41 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:39:41 -0400] [1458] [INFO] Booting worker with pid: 1458
+[2020-03-08 17:39:41,341] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:39:41,342] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:39:42 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:39:42 -0400] [1277] [INFO] Worker exiting (pid: 1277)
+[2020-03-08 17:40:12 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:40:12 -0400] [1571] [INFO] Booting worker with pid: 1571
+[2020-03-08 17:40:12,660] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:40:12,660] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:40:13 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:40:13 -0400] [1316] [INFO] Worker exiting (pid: 1316)
+[2020-03-08 17:40:43 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:40:43 -0400] [1671] [INFO] Booting worker with pid: 1671
+[2020-03-08 17:40:44,135] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:40:44,136] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:40:45 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:40:45 -0400] [1348] [INFO] Worker exiting (pid: 1348)
+[2020-03-08 17:41:15 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:41:15 -0400] [1713] [INFO] Booting worker with pid: 1713
+[2020-03-08 17:41:15,522] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:41:15,523] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:41:16 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:41:16 -0400] [1378] [INFO] Worker exiting (pid: 1378)
+[2020-03-08 17:41:46 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:41:46 -0400] [1762] [INFO] Booting worker with pid: 1762
+[2020-03-08 17:41:46,763] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:41:46,764] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:41:47 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:41:47 -0400] [1458] [INFO] Worker exiting (pid: 1458)
+[2020-03-08 17:42:17 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:42:17 -0400] [1806] [INFO] Booting worker with pid: 1806
+[2020-03-08 17:42:18,105] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:42:18,105] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:42:19 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:42:19 -0400] [1571] [INFO] Worker exiting (pid: 1571)
+[2020-03-08 17:42:49 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:42:49 -0400] [1847] [INFO] Booting worker with pid: 1847
+[2020-03-08 17:42:49,648] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:42:49,649] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:42:50 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:42:50 -0400] [1671] [INFO] Worker exiting (pid: 1671)
+[2020-03-08 17:43:20 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:43:20 -0400] [1887] [INFO] Booting worker with pid: 1887
+[2020-03-08 17:43:20,956] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:43:20,956] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:43:21 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:43:21 -0400] [1713] [INFO] Worker exiting (pid: 1713)
+[2020-03-08 17:43:51 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:43:51 -0400] [1927] [INFO] Booting worker with pid: 1927
+[2020-03-08 17:43:52,235] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:43:52,236] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:43:53 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:43:53 -0400] [1762] [INFO] Worker exiting (pid: 1762)
+[2020-03-08 17:44:23 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:44:23 -0400] [1957] [INFO] Booting worker with pid: 1957
+[2020-03-08 17:44:23,565] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:44:23,566] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:44:24 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:44:24 -0400] [1806] [INFO] Worker exiting (pid: 1806)
+[2020-03-08 17:44:54 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:44:54 -0400] [1992] [INFO] Booting worker with pid: 1992
+[2020-03-08 17:44:54,916] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:44:54,916] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:44:55 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:44:55 -0400] [1847] [INFO] Worker exiting (pid: 1847)
+[2020-03-08 17:45:25 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:45:25 -0400] [2081] [INFO] Booting worker with pid: 2081
+[2020-03-08 17:45:26,256] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:45:26,256] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:45:27 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:45:27 -0400] [1887] [INFO] Worker exiting (pid: 1887)
+[2020-03-08 17:45:57 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:45:57 -0400] [2423] [INFO] Booting worker with pid: 2423
+[2020-03-08 17:45:57,656] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:45:57,656] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:45:58 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:45:58 -0400] [1927] [INFO] Worker exiting (pid: 1927)
+[2020-03-08 17:46:28 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:46:28 -0400] [2508] [INFO] Booting worker with pid: 2508
+[2020-03-08 17:46:28,998] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:46:28,999] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:46:29 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:46:29 -0400] [1957] [INFO] Worker exiting (pid: 1957)
+[2020-03-08 17:47:00 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:47:00 -0400] [2542] [INFO] Booting worker with pid: 2542
+[2020-03-08 17:47:00,301] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:47:00,301] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:47:01 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:47:01 -0400] [1992] [INFO] Worker exiting (pid: 1992)
+[2020-03-08 17:47:31 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:47:31 -0400] [2613] [INFO] Booting worker with pid: 2613
+[2020-03-08 17:47:31,710] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:47:31,710] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:47:32 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:47:32 -0400] [2081] [INFO] Worker exiting (pid: 2081)
+[2020-03-08 17:48:02 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:48:02 -0400] [3013] [INFO] Booting worker with pid: 3013
+[2020-03-08 17:48:03,102] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:48:03,103] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:48:03 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:48:03 -0400] [2423] [INFO] Worker exiting (pid: 2423)
+[2020-03-08 17:48:34 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:48:34 -0400] [3098] [INFO] Booting worker with pid: 3098
+[2020-03-08 17:48:34,365] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:48:34,366] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:48:35 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:48:35 -0400] [2508] [INFO] Worker exiting (pid: 2508)
+[2020-03-08 17:49:05 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:49:05 -0400] [3951] [INFO] Booting worker with pid: 3951
+[2020-03-08 17:49:05,888] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:49:05,888] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:49:06 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:49:06 -0400] [2542] [INFO] Worker exiting (pid: 2542)
+[2020-03-08 17:49:37 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:49:37 -0400] [5056] [INFO] Booting worker with pid: 5056
+[2020-03-08 17:49:37,260] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:49:37,260] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:49:38 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:49:38 -0400] [2613] [INFO] Worker exiting (pid: 2613)
+[2020-03-08 17:50:08 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:50:08 -0400] [5193] [INFO] Booting worker with pid: 5193
+[2020-03-08 17:50:08,615] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:50:08,616] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:50:09 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:50:09 -0400] [3013] [INFO] Worker exiting (pid: 3013)
+[2020-03-08 17:50:39 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:50:39 -0400] [5462] [INFO] Booting worker with pid: 5462
+[2020-03-08 17:50:39,952] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:50:39,953] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:50:40 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:50:40 -0400] [3098] [INFO] Worker exiting (pid: 3098)
+[2020-03-08 17:51:11 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:51:11 -0400] [5492] [INFO] Booting worker with pid: 5492
+[2020-03-08 17:51:11,308] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:51:11,309] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:51:12 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:51:12 -0400] [3951] [INFO] Worker exiting (pid: 3951)
+[2020-03-08 17:51:42 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:51:42 -0400] [5725] [INFO] Booting worker with pid: 5725
+[2020-03-08 17:51:42,671] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:51:42,672] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:51:43 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:51:43 -0400] [5056] [INFO] Worker exiting (pid: 5056)
+[2020-03-08 17:52:13 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:52:13 -0400] [5783] [INFO] Booting worker with pid: 5783
+[2020-03-08 17:52:13,922] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:52:13,923] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:52:14 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:52:14 -0400] [5193] [INFO] Worker exiting (pid: 5193)
+[2020-03-08 17:52:45 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:52:45 -0400] [5834] [INFO] Booting worker with pid: 5834
+[2020-03-08 17:52:45,305] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:52:45,306] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:52:46 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:52:46 -0400] [5462] [INFO] Worker exiting (pid: 5462)
+[2020-03-08 17:53:16 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:53:16 -0400] [5879] [INFO] Booting worker with pid: 5879
+[2020-03-08 17:53:16,741] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:53:16,742] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:53:17 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:53:17 -0400] [5492] [INFO] Worker exiting (pid: 5492)
+[2020-03-08 17:53:47 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:53:47 -0400] [5911] [INFO] Booting worker with pid: 5911
+[2020-03-08 17:53:48,219] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:53:48,219] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:53:49 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:53:49 -0400] [5725] [INFO] Worker exiting (pid: 5725)
+[2020-03-08 17:54:19 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:54:19 -0400] [5973] [INFO] Booting worker with pid: 5973
+[2020-03-08 17:54:19,567] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:54:19,567] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:54:20 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:54:20 -0400] [5783] [INFO] Worker exiting (pid: 5783)
+[2020-03-08 17:54:50 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:54:50 -0400] [6006] [INFO] Booting worker with pid: 6006
+[2020-03-08 17:54:50,960] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:54:50,961] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:54:51 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:54:51 -0400] [5834] [INFO] Worker exiting (pid: 5834)
+[2020-03-08 17:55:22 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:55:22 -0400] [6107] [INFO] Booting worker with pid: 6107
+[2020-03-08 17:55:22,438] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:55:22,439] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:55:23 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:55:23 -0400] [5879] [INFO] Worker exiting (pid: 5879)
+[2020-03-08 17:55:53 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:55:53 -0400] [6187] [INFO] Booting worker with pid: 6187
+[2020-03-08 17:55:53,831] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:55:53,832] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:55:54 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:55:54 -0400] [5911] [INFO] Worker exiting (pid: 5911)
+[2020-03-08 17:56:24 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:56:24 -0400] [6329] [INFO] Booting worker with pid: 6329
+[2020-03-08 17:56:25,152] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:56:25,152] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:56:26 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:56:26 -0400] [5973] [INFO] Worker exiting (pid: 5973)
+[2020-03-08 17:56:56 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:56:56 -0400] [6390] [INFO] Booting worker with pid: 6390
+[2020-03-08 17:56:56,521] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:56:56,521] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:56:57 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:56:57 -0400] [6006] [INFO] Worker exiting (pid: 6006)
+[2020-03-08 17:57:27 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:57:27 -0400] [6510] [INFO] Booting worker with pid: 6510
+[2020-03-08 17:57:27,948] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:57:27,949] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:57:28 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:57:28 -0400] [6107] [INFO] Worker exiting (pid: 6107)
+[2020-03-08 17:57:59 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:57:59 -0400] [6632] [INFO] Booting worker with pid: 6632
+[2020-03-08 17:57:59,370] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:57:59,371] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:58:00 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:58:00 -0400] [6187] [INFO] Worker exiting (pid: 6187)
+[2020-03-08 17:58:30 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:58:30 -0400] [6720] [INFO] Booting worker with pid: 6720
+[2020-03-08 17:58:30,768] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:58:30,769] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:58:31 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:58:31 -0400] [6329] [INFO] Worker exiting (pid: 6329)
+[2020-03-08 17:59:01 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:59:01 -0400] [6752] [INFO] Booting worker with pid: 6752
+[2020-03-08 17:59:02,091] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:59:02,092] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:59:03 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:59:03 -0400] [6390] [INFO] Worker exiting (pid: 6390)
+[2020-03-08 17:59:33 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 17:59:33 -0400] [6780] [INFO] Booting worker with pid: 6780
+[2020-03-08 17:59:33,482] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 17:59:33,483] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 17:59:34 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 17:59:34 -0400] [6510] [INFO] Worker exiting (pid: 6510)
+[2020-03-08 18:00:04 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:00:04 -0400] [6985] [INFO] Booting worker with pid: 6985
+[2020-03-08 18:00:04,851] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:00:04,851] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:00:05 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:00:05 -0400] [6632] [INFO] Worker exiting (pid: 6632)
+[2020-03-08 18:00:35 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:00:35 -0400] [7027] [INFO] Booting worker with pid: 7027
+[2020-03-08 18:00:36,173] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:00:36,173] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:00:37 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:00:37 -0400] [6720] [INFO] Worker exiting (pid: 6720)
+[2020-03-08 18:01:07 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:01:07 -0400] [7060] [INFO] Booting worker with pid: 7060
+[2020-03-08 18:01:07,503] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:01:07,504] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:01:08 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:01:08 -0400] [6752] [INFO] Worker exiting (pid: 6752)
+[2020-03-08 18:01:38 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:01:38 -0400] [7105] [INFO] Booting worker with pid: 7105
+[2020-03-08 18:01:38,828] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:01:38,828] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:01:39 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:01:39 -0400] [6780] [INFO] Worker exiting (pid: 6780)
+[2020-03-08 18:02:09 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:02:09 -0400] [7203] [INFO] Booting worker with pid: 7203
+[2020-03-08 18:02:10,170] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:02:10,171] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:02:11 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:02:11 -0400] [6985] [INFO] Worker exiting (pid: 6985)
+[2020-03-08 18:02:41 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:02:41 -0400] [7292] [INFO] Booting worker with pid: 7292
+[2020-03-08 18:02:41,589] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:02:41,590] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:02:42 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:02:42 -0400] [7027] [INFO] Worker exiting (pid: 7027)
+[2020-03-08 18:03:12 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:03:12 -0400] [7340] [INFO] Booting worker with pid: 7340
+[2020-03-08 18:03:12,890] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:03:12,890] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:03:13 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:03:13 -0400] [7060] [INFO] Worker exiting (pid: 7060)
+[2020-03-08 18:03:43 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:03:43 -0400] [7402] [INFO] Booting worker with pid: 7402
+[2020-03-08 18:03:44,224] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:03:44,224] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:03:45 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:03:45 -0400] [7105] [INFO] Worker exiting (pid: 7105)
+[2020-03-08 18:04:15 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:04:15 -0400] [7455] [INFO] Booting worker with pid: 7455
+[2020-03-08 18:04:15,534] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:04:15,535] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:04:16 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:04:16 -0400] [7203] [INFO] Worker exiting (pid: 7203)
+[2020-03-08 18:04:46 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:04:46 -0400] [7510] [INFO] Booting worker with pid: 7510
+[2020-03-08 18:04:46,880] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:04:46,881] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:04:47 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:04:47 -0400] [7292] [INFO] Worker exiting (pid: 7292)
+[2020-03-08 18:05:17 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:05:17 -0400] [7553] [INFO] Booting worker with pid: 7553
+[2020-03-08 18:05:18,174] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:05:18,174] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:05:19 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:05:19 -0400] [7340] [INFO] Worker exiting (pid: 7340)
+[2020-03-08 18:05:49 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:05:49 -0400] [7612] [INFO] Booting worker with pid: 7612
+[2020-03-08 18:05:49,455] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:05:49,456] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:05:50 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:05:50 -0400] [7402] [INFO] Worker exiting (pid: 7402)
+[2020-03-08 18:06:20 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:06:20 -0400] [7657] [INFO] Booting worker with pid: 7657
+[2020-03-08 18:06:20,887] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:06:20,887] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:06:21 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:06:21 -0400] [7455] [INFO] Worker exiting (pid: 7455)
+[2020-03-08 18:06:51 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:06:51 -0400] [7706] [INFO] Booting worker with pid: 7706
+[2020-03-08 18:06:52,206] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:06:52,207] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:06:53 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:06:53 -0400] [7510] [INFO] Worker exiting (pid: 7510)
+[2020-03-08 18:07:23 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:07:23 -0400] [7755] [INFO] Booting worker with pid: 7755
+[2020-03-08 18:07:23,553] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:07:23,553] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:07:24 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:07:24 -0400] [7553] [INFO] Worker exiting (pid: 7553)
+[2020-03-08 18:07:54 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:07:54 -0400] [7806] [INFO] Booting worker with pid: 7806
+[2020-03-08 18:07:54,890] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:07:54,891] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:07:55 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:07:55 -0400] [7612] [INFO] Worker exiting (pid: 7612)
+[2020-03-08 18:08:25 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:08:25 -0400] [7848] [INFO] Booting worker with pid: 7848
+[2020-03-08 18:08:26,265] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:08:26,266] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:08:27 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:08:27 -0400] [7657] [INFO] Worker exiting (pid: 7657)
+[2020-03-08 18:08:57 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:08:57 -0400] [7897] [INFO] Booting worker with pid: 7897
+[2020-03-08 18:08:57,565] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:08:57,566] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:08:58 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:08:58 -0400] [7706] [INFO] Worker exiting (pid: 7706)
+[2020-03-08 18:09:28 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:09:28 -0400] [7954] [INFO] Booting worker with pid: 7954
+[2020-03-08 18:09:28,906] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:09:28,906] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:09:29 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:09:29 -0400] [7755] [INFO] Worker exiting (pid: 7755)
+[2020-03-08 18:10:00 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:10:00 -0400] [8035] [INFO] Booting worker with pid: 8035
+[2020-03-08 18:10:00,318] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:10:00,318] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:10:01 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:10:01 -0400] [7806] [INFO] Worker exiting (pid: 7806)
+[2020-03-08 18:10:31 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:10:31 -0400] [8063] [INFO] Booting worker with pid: 8063
+[2020-03-08 18:10:31,635] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:10:31,635] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:10:32 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:10:32 -0400] [7848] [INFO] Worker exiting (pid: 7848)
+[2020-03-08 18:11:02 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:11:02 -0400] [8093] [INFO] Booting worker with pid: 8093
+[2020-03-08 18:11:02,962] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:11:02,962] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:11:03 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:11:03 -0400] [7897] [INFO] Worker exiting (pid: 7897)
+[2020-03-08 18:11:34 -0400] [3254] [INFO] Handling signal: ttin
+[2020-03-08 18:11:34 -0400] [8122] [INFO] Booting worker with pid: 8122
+[2020-03-08 18:11:34,283] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2020-03-08 18:11:34,283] {dagbag.py:403} INFO - Filling up the DagBag from /home/desktop/airflow/dags
+[2020-03-08 18:11:35 -0400] [3254] [INFO] Handling signal: ttou
+[2020-03-08 18:11:35 -0400] [7954] [INFO] Worker exiting (pid: 7954)
