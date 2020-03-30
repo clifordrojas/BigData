@@ -1,0 +1,14 @@
+#!/bin/sh
+
+tar -xzvf apache-cassandra-2.1.21-bin.tar.gz
+
+cp apache-cassandra-2.1.21 /opt/
+
+cd /opt
+
+sudo chmod 777 -R apache-cassandra-2.1.21/
+
+#Set Cassandra
+cd
+echo -e "#Set Cassandra \nexport 127.0.0.1:9160_HOME=/opt/apache-cassandra-2.1.21\nexport PATH=$PATH:/opt/apache-cassandra-2.1.21/bin" >> .bash_profile
+

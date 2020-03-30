@@ -1,0 +1,21 @@
+#!/bin/sh
+
+tar -xzvf apache-cassandra-2.1.21-bin.tar.gz
+
+cp apache-cassandra-2.1.21 /opt/
+
+cd /opt
+
+#Start Cassandra in the foreground by invoking bin/cassandra -f from the command line. Press “Control-C” to stop Cassandra. Start Cassandra in the background by invoking bin/cassandra from the command line. Invoke kill pid or pkill -f CassandraDaemon to stop Cassandra, where pid is the Cassandra process id, which you can find for example by invoking pgrep -f CassandraDaemon.
+#Verify that Cassandra is running by invoking bin/nodetool status from the command line.
+#Configuration files are located in the conf sub-directory.
+
+sudo chmod 777 -R apache-cassandra-2.1.21/
+
+#Set Cassandra
+cd
+echo -e "#Set Cassandra \nexport CASSANDRA_HOME=/opt/apache-cassandra-2.1.21\nexport PATH=$PATH:/opt/apache-cassandra-2.1.21/bin" >> .bash_profile
+
+
+#Check Cassandra
+

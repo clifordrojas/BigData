@@ -1,0 +1,22 @@
+Start Cassandra in the foreground by invoking bin/cassandra -f from the command line. Press “Control-C” to stop Cassandra. Start Cassandra in the background by invoking bin/cassandra from the command line. Invoke kill pid or pkill -f CassandraDaemon to stop Cassandra, where pid is the Cassandra process id, which you can find for example by invoking pgrep -f CassandraDaemon.
+Verify that Cassandra is running by invoking bin/nodetool status from the command line.
+Configuration files are located in the conf sub-directory.
+
+# START CASSANDRA
+cassandra-cli -h localhost
+
+CREATE KEYSPACE crud;
+
+USE crud;
+
+#Create COLUMN "Table"
+
+CREATE COLUMN FAMILY test_cf
+WITH                                   
+DEFAULT_VALIDATION_CLASS = UTF8Type AND
+KEY_VALIDATION_CLASS = LongType AND    
+COMPARATOR = UTF8Type;  
+
+
+#Value
+SET test_cf[1]['first_column_name'] = 'first value';
