@@ -56,4 +56,44 @@ Leader - Receives message, stores locally, send back acklowledgement to producer
 	there is a leader for that. 
 Followers - Copy data from leader and do not talk to producer/consumer.
 
+JD - Have you built and run Kafka clusters in production? How about across cloud providers and on-premise data centers? Are you interested in deploying, testing and destroying a Kafka cluster in record time? 
+
+ Kafka
+
+    What is Kafka?
+	-Kafka is a distributed, resilient, fault tolerant pub-sub system that is horizontally scalable. It allows for sub 10ms communication. It is a very powerful messaging system, application logging, streaming process, and other aspects where a transportation mechanism is needed.
+
+    List the various components of Kafka?
+	-Zookeeper
+		-Controller election
+			-Leader/follower
+		-Configuration
+			-Znodes
+			-Topics (replication,Current Topics..etc)
+			-Quota management
+		-Synchronization
+			-State management
+
+	-Brokers [server(s)]
+		-Resources available to send and receive messages.
+		-CPU
+		-Memory
+		-Storage (HDD or SSD)
+	
+	-Topics:
+		Topics are broken down in partition where records are stored. Records can be addressed 
+		by using the record key and it uses round-robin if the key is missing. Partitions can be scaled across multiple servers and allows for parallel consumers. Consumers can consume in 			parallel equal to the amount of partitions. All records in the partitions will be given an offset (sequence id) to keep track of records, as the records are appended 			to 			the partition.  
+
+	-Producers:
+		Kafka producers send records (messages) to Kafka topics. Producers can be implemented in various ways round-robin, priority system, and other systems necessary for the use 			case. The producer picks the partition it wants to send the messages to. 
+	-Consumers:
+		Consumers can access data using the poll method that will automatically handle Kafka's partition re-balancing and data fetching. The poll method will also handle the heartbeat thread.
+			
+	
+    What is a consumer group?
+	-The consumer group is a collection of consumers who have the same use case or function. Meaning you can have multiple consumers groups that read from different locations. Use cases for this 	includes moving data to a data lake and consuming log data to stream it to a cloud service. Consumer groups are necessary to ensure the proper server resources are being utilized. This will ensure 		high-sped (in-memory) messages get delivered as fast as possible where other groups can use (ssd) memory for micro-batching messages and slower less time sensitive groups use hard disk drives to 		complete the task. 
+
+    Why are replications critical in Kafka?
+	-Kafka uses the master/slave where each partition has a leader and possibly followers. Because of this replication is important for fault tolerance managing the leader failure. As leaders 		responsibility is to handle all read and write request the data would be lost if it doesn't have followers and the leader goes down. Depending business needs a replication factor can be applied where the data will be replicated N times among different servers. This makes the system fault tolerant where multiple leaders can go down and the data will still be saved as zookeeper can elect new leaders automatically. 
+
  
