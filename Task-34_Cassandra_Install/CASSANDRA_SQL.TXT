@@ -23,7 +23,7 @@ SET test_cf[1]['first_column_name'] = 'first value';
 
 
 #------------------------------------------Using proper cqlsh---------------------------------------#
-CREATE KEYSPACE  clifordtesting WITH replication = {'class':'SimpleStrategy','replication_factor': 3};
+CREATE KEYSPACE  clifordtesting WITH replication = {'class':'SimpleStrategy','replication_factor': 2};
 
 USE clifordtesting;
 
