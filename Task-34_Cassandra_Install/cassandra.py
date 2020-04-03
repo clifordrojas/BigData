@@ -24,29 +24,35 @@ named_df.write\
     .save()
 
 schema = StructType([
-                StructField( "json_id",  StringType() ),
-                StructField( "age",  StringType() ),
-                StructField( "first_name", StringType() ),
+                StructField( "age", StringType() ),
+                StructField( "first_name",  StringType() ),
                 StructField( "last_name", StringType() )
          ]
          )
 
-csv_df = spark.read.schema(schema).format("json").load("file:///home/desktop/Desktop/json_file.json")
-csv_df.registerTempTable('json_temp_table')
+json_df = spark.read.schema(schema).format("json").load("file:///home/desktop/Desktop/json_file.json")
+json_df.registerTempTable('json_temp_table')
 
-temp = spark.sql("select * from json_temp_table")
-temp.show()
-named_df = spark.sql( "select uuid() as json_id, age,first_name,last_name from json_temp_table")
-named_df.show()
+js_named_df = spark.sql( "select uuid() as json_id, age, first_name, last_name\
+                                           from json_temp_table"\
+                       )
+js_named_df.show()
 
-# named_df.write\
-#     .format("org.apache.spark.sql.cassandra")\
-#     .mode( "append" )\
-#     .options( table="json_data", keyspace="clifordtesting" )\
-#     .save()
-#
-# csv_read = spark.read\
-#                 .format("org.apache.spark.sql.cassandra")\
-#                 .options(table="csv_data", keyspace="clifordtesting")\
-#                 .load()
-# csv_read.show()
+
+js_named_df.write\
+    .format("org.apache.spark.sql.cassandra")\
+    .mode( "append" )\
+    .options( table="json_data", keyspace="clifordtesting" )\
+    .save()
+
+csv_read = spark.read\
+                .format("org.apache.spark.sql.cassandra")\
+                .options(table="csv_data", keyspace="clifordtesting")\
+                .load()
+csv_read.show()
+
+json_read = spark.read\
+                .format("org.apache.spark.sql.cassandra")\
+                .options(table="json_data", keyspace="clifordtesting")\
+                .load()
+json_read.show()
