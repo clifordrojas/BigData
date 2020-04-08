@@ -1,0 +1,49 @@
+Scrum Notes
+Date: 4/8/2020
+CC:
+caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us, jeffery.alkire@enhanceit.us, weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
+
+
+#------------------------------------------------------------------#
+Alicja
+#------------------------------------------------------------------#
+Caleb
+Scheduled Interview:
+-AAA TP@11:00am
+-AAA IV@4:30pm
+-Slower R4 TP@ 8:00am
+-Slower R4 IV@ 12:00pm
+Pipeline Progress (TRAINING/CONTRACT):
+	STAGE: aws dynamodb (warehousing), KStream
+	CURRENT PROGRESS: figuring out my secondary local indexes and global indexes for my dynamodb warehouse pipeline, WCUs for my provisioned throughput
+Tasks:
+	CURRENT TASK: Task 31: All Installations
+	NONE-COMPLETE: 31,32,33,34,35
+Studying:
+	dynamodb
+Time:
+	1hr admin , emails
+	2hrs studying Kstream, Dynamodb,Interview prep
+	2hrs Coding Kstream
+#------------------------------------------------------------------#
+Cliford
+Scheduled Interview:
+	11:00 am - R1 - TP - TCF Bank
+	5:00 pm - R1 - IV - TCF Bank
+
+Pipeline Progress (TRAINING/CONTRACT):
+	STAGE: Ingestion
+	CURRENT PROGRESS: Working on Tasks instead of pipeline to get more understanding and experience of Hbase,Cassandra,MongoDB.
+Tasks:
+	CURRENT TASK: Task 33: Finished Hbase install/Config running into zookeeper error.
+	NONE-COMPLETE: 30,31,33,35
+Studying:
+	KStream, Kafka Architecture, SQL, AWS Lambda
+Time:
+	Approx 2hrs admin: Emails, Scrum notes, Scrummaster updates, Q & A Structure set up.
+	2.5 hrs studying KStream, Kafka Architecture, SQL, AWS Lambda
+	1hr Coding (Download, Extract, Config HBase. Fixed Java_home not found error)
+#------------------------------------------------------------------#
+Jerry
+#------------------------------------------------------------------#
+Miya
