@@ -1,6 +1,6 @@
 Times (24hrs Clock):
 8-10: Admin:Scrum Updates, Email Checks, Schedule update.
-10-12: Teck Prep, Q & A, Deloitte research 
-12-13:Lunch
+10-12:20: Teck Prep, Hbase (insterted Data), Q & A Rescheduled 2pm, Caleb interivew
+12:20-13:20:Lunch
 13-15
 15-17

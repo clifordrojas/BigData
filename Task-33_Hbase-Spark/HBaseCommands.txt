@@ -1,0 +1,12 @@
+/Create db
+create_namespace 'cliford'
+//create table
+create 'cliford:myTable', 'id','name','age'
+
+describe 'cliford:myTable'
+
+put 'cliford:myTable', 'name:cliford', 'age:27', 'id:1'
+
+scan 'cliford:myTable'
+
+
