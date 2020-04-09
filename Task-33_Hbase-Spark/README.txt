@@ -11,3 +11,4 @@ cd
 
 echo -e "#Set up Hbase\nexport HBASE_HOME=/opt/hbase-2.2.4\nexport PATH=$PATH:/opt/hbase-2.2.4/bin" >> .bash_profile
 
+#Ensure to run on local mode otherwise other issues my arise
