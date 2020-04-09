@@ -1,21 +1,50 @@
 Scrum Notes
-Date: 4/8/2020
+Date: 4/9/2020
 CC:
 caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us, jeffery.alkire@enhanceit.us, weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
 
 #################################################################################################
 Summary of no/little progress:
-Alicja: Pipeline progress: No changes since yesterday.
-Caleb: Pipeline progress & Tasks: No changes since yesterday.
-Cliford: Pipeline progress: No changes since yesterday. Tasks: HBase: Issues Resolved.
+Alicja: Pipeline progress: No changes since yesterday. Tasks: Same as yesterday.
+Cliford: Pipeline progress: No changes since yesterday. Tasks: HBase: Issues "ERROR: KeeperErrorCode = ConnectionLoss for /hbase/master".
 #################################################################################################  
 
 #------------------------------------------------------------------#
 Alicja
- 
+
+Scheduled Interview:
+	2pm capital one glider
+Pipeline Progress (TRAINING/CONTRACT):
+	STAGE: ingestion
+	CURRENT PROGRESS: automate API call after session expired
+Tasks:
+	CURRENT TASK: automating hadoop ecosystem, using global variable in bash (done), automate spark and Kafka, spark streaming
+	NONE-COMPLETE: 31+
+Studying:
+	reading hadoop book
+Time:
+	Approx 3hr admin: emails, screenings, 
+	3 hrs studying spark, interview prep
+	2 hrs tasks, reviewing spark streaming and pipeline spark  
 #------------------------------------------------------------------#
 Caleb
+Scheduled Interview:
+*email broken*
+4/9 Fannie Mae - TP??
+4/9 Fannie Mae -IV@6pm4/9 Nokia - TP@??
+4/9 Nokia - IV@11:30am4/10 RF AAA -TP@?
+4/10 RF AAA - IV@2:30pm-4:30pm Pipeline Progress (TRAINING/CONTRACT):
+	2nd piplineSTAGE: aws did kinesis stream (debuging credential errors)
+ 1st pipe: switch to kstream 
 
+	CURRENT PROGRESS: installed databases, made kinesis stream, redoing kstream, connecting kineses to spark ec2 cluster, to stream to database  
+	CURRENT TASK: Task 32 read Stream to databases  	NONE-COMPLETE: 32,33,34,35
+Studying:
+	dynamodbTime:
+	3hr wrapping up installtions 
+	3hrs figure out how wanted to impement kinesis, Dynamodb
+2hr mettings + debuging 
+Interview prepN/a interview
 #------------------------------------------------------------------#
 Cliford
 Scheduled Interview:
@@ -26,7 +55,7 @@ Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
 	CURRENT PROGRESS: Working on Tasks instead of pipeline to get more understanding and experience of Hbase,Cassandra,MongoDB.
 Tasks:
-	CURRENT TASK: Task 33: Hbase installed with no issues. Next: Load data using spark.
+	CURRENT TASK: Task 33: Hbase issues.
 	NONE-COMPLETE: 30,31,33,35
 Studying:
 	RDD,Dataset, Star Schema,Snowflake schema,Partitioning vs bucketting, spark parallelism, Create dataframes
