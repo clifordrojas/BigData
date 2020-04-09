@@ -7,82 +7,63 @@ caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us, jeffery.alkire@enhanceit.u
 Summary of no/little progress:
 Alicja: Pipeline progress: No changes since yesterday.
 Caleb: Pipeline progress & Tasks: No changes since yesterday.
-Cliford: Pipeline progress: No changes since yesterday. Tasks: HBase Config Issues still persist.
+Cliford: Pipeline progress: No changes since yesterday. Tasks: HBase: Issues Resolved.
 #################################################################################################  
 
 #------------------------------------------------------------------#
 Alicja
  
-Scheduled Interview:
-	5pm gerber glass and collision
-   11am tech prep
-Pipeline Progress (TRAINING/CONTRACT):
-	STAGE: ingestion
-	CURRENT PROGRESS: automate API call after session expired
-Tasks:
-	CURRENT TASK: automating hadoop ecosystem, using global variable in bash (done), automate spark and Kafka
-	NONE-COMPLETE: 31+
-Studying:
-	reading hadoop book
-Time:
-	Approx 2hr admin: emails, screenings, 
-	3 hrs studying Kstream, KSQL, 
-	3 hrs tasks, debugged hadoop script
 #------------------------------------------------------------------#
 Caleb
-Scheduled Interview:
--None atm
-Pipeline Progress (TRAINING/CONTRACT):
-	STAGE: aws dynamodb (warehousing), KStream	
-	CURRENT PROGRESS: figuring out my secondary local indexes and global indexes for my dynamodb 		warehouse pipeline, WCUs for my provisioned throughput
-Tasks:
-	CURRENT TASK: Task 31: All Installations	NONE-COMPLETE: 31,32,33,34,35
-Studying:
-	dynamodbTime:
-	1hr admin , emails
-	2hrs studying Kstream, Dynamodb
-Interview prep	2hrs Coding KstreamN/a interview
+
 #------------------------------------------------------------------#
 Cliford
 Scheduled Interview:
-	11:00 am - R1 - TP - TCF Bank
-	5:00 pm - R1 - IV - TCF Bank
+	10:00 am - R2 - TP - Deloitte
+	5:00 pm - R2 - IV - Deloitte
 
 Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
 	CURRENT PROGRESS: Working on Tasks instead of pipeline to get more understanding and experience of Hbase,Cassandra,MongoDB.
 Tasks:
-	CURRENT TASK: Task 33: Finished Hbase install/Config running into zookeeper error.
+	CURRENT TASK: Task 33: Hbase installed with no issues. Next: Load data using spark.
 	NONE-COMPLETE: 30,31,33,35
 Studying:
-	KStream, Kafka Architecture, SQL, AWS Lambda
+	RDD,Dataset, Star Schema,Snowflake schema,Partitioning vs bucketting, spark parallelism, Create dataframes
 Time:
-	Approx 2hrs admin: Emails, Scrum notes, Scrummaster updates, Q & A Structure set up.
-	2.5 hrs studying KStream, Kafka Architecture, SQL, AWS Lambda
-	1hr Coding (Download, Extract, Config HBase. Fixed Java_home not found error)
+	8-10: Scrum Notes,Schedule Check, Hbase Troubleshooting
+	10-12: Q & A Prep, Tech prep-prep,Hbase fixed and running, Tech Prep (Israil)
+	12-1: Lunch
+	1-130: Part 1 Q & A //Vendor call in the middle of the conference.
+	145:220: Part 2 Q & A
+	2:20-3: Inverview Prep - RDD,DATAFRAME,DATASET, STAR vs SNOWFLAKE Schema.
+	break 10min 
+	3-4: Interview Prep - Hive create table, Partitioning, Bucketing,Spark partitions, spark parallelism,
+			ways to create dataframes.
+	4-420:Admin: Figuring out the note taker for iv. Switching back to Windows OS. Updating GitHub
+	Interview
 #------------------------------------------------------------------#
 Jerry
 Scheduled Interview:
-	nonePipeline Progress (TRAINING/CONTRACT):
+	none
+Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: spark read s3 file
 	CURRENT PROGRESS: AWS4-HMAC-SHA256 version issue, same as move data from hdfs to s3
-    Time: an hour on interview questions
-          2 hours on creating emr cluster on shell script
-          an hour on figuring config of spark to read s3
-          many hours on troubleshooting spark reading s3 file
+    Time: 2 hours on CDM
+          2 hours on studyind aws
+          3 hours on troubleshooting spark reading s3 file
 Tasks:
 	CURRENT TASK: none
 	NONE-COMPLETE: Task #33 - 35
 Studying:
-	none
+	aws
 #------------------------------------------------------------------#
 Miya
-Scheduled Interview: NONE
-Pipeline Progress (TRAINING/CONTRACT):NONE
+Scheduled Interview: one video call at 1pm
 Tasks:
-	CURRENT TASK: finished T31 SQL part, work on spark streaming code
+	CURRENT TASK: retest SQL code on HIVE, work on code for spark Dstream, offset, window ..
 	NONE-COMPLETE: T31,T33-T35
 Time:
-    -2hrs Checking emails, listen in vendor calls and waiting for my own vendor call.
-    -3hrs Review interview Qs and attend meeting, watched KSQL and spark videos. 
-    -3hrs Task31, Coding SQL Window functions AND debug (LAG,LEAD,OVER,RANK,DENSE_RANK)
+    -3hrs listen in interview and take note, listen in vendor calls and call vendors.
+    -2hrs Review interview Qs and attend discussion, watched spark videos.
+    -3hrs Test SQL Window functions on HIVE, wrote scala code for sparking and D-stream word count and debug.
