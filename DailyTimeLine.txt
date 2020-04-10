@@ -1,6 +1,6 @@
 Times (24hrs Clock):
-8-10: Admin:Scrum Updates, Email Checks, Schedule update.
-10-12:20: Teck Prep, Hbase (insterted Data), Q & A Rescheduled 2pm, Caleb interivew
-12:20-13:20:Lunch
-13-15: AWS Tools (S3,DynamoDB,Redshift) Parquet vs orc, admin
-15-17: FINRA Assesment, Behavrioural test for Highmark Health. 
+8-10:
+10-12:
+12-13:Lunch
+13-15:
+15-17:
