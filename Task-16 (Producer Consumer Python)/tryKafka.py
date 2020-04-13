@@ -3,7 +3,7 @@ import json
 import requests
 from io import StringIO
 import subprocess
-
+import time
 # from names import get_full_name
 
 output = StringIO()
@@ -11,8 +11,9 @@ output = StringIO()
 fileWriter = open("data.json", "w+")
 counter = 0
 stringIO = StringIO()
-while counter <= 1:
+while counter <= 5:
     response = requests.get("https://api.chucknorris.io/jokes/random")
+    time.sleep(3)
     stringIO.write(str(response.json())+"\n")
     print(str(response.json())+"\n")
     counter += 1

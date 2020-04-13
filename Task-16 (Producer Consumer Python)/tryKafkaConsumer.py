@@ -19,7 +19,7 @@ def read():
 p = multiprocessing.Process(target=read, name="read", args=())
 p.start()
 
-time.sleep(10)
+time.sleep(5)
 
 p.terminate()
 p.join()
