@@ -1,0 +1,4 @@
+LOAD DATA LOCAL INFILE '/data/u.data' INTO TABLE hive_data FIELDS TERMINATED BY '\t';
+LOAD DATA LOCAL INFILE '/data/u.info' INTO TABLE u_info FIELDS TERMINATED BY ' ';
+LOAD DATA LOCAL INFILE '/data/u.genre' INTO TABLE u_genre FIELDS TERMINATED BY '|';
+LOAD DATA LOCAL INFILE '/data/u.occupation' INTO TABLE u_occupation;

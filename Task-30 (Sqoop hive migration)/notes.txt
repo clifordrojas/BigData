@@ -1,6 +1,9 @@
 #Log in to HortonWorks
 ssh maria_dev@localhost -p 2222
 
+#Transfer Data to Maria_dev
+scp your_file user@ip_address:/file/path
+
 #Star hive 
 hive
 #If hive hangs use:
@@ -10,10 +13,10 @@ hive --hiveconf hive.execution.engine=mr #-f load_data.sql
 export ACCUMULO_HOME='/usr/hdp/2.6.5.0-292/pig/doc/api/org/apache/pig/backend/hadoop/accumulo'
 
 TODO:
-•         Create new Hive database movielens_db
-•         *create 1 managed table in Hive
-•         create 4 tables in mySQL (and insert data )
-•         *move data from mySQL tables to HDFS Hive table (already created)
+•         Done- Create new Hive database movielens_db
+•         Done -create 1 managed table in Hive
+•         Done - create 4 tables in mySQL (and insert data )
+•         Done - *move data from mySQL tables to HDFS Hive table (already created)
 •         move data from mySQL to HDFS (Hive external tables 'maria_dev')
 •         *create new table in mySQL
 •         *move data from table back to mySQL
@@ -50,8 +53,8 @@ CREATE TABLE u_occupation
 ( occupation VARCHAR(50)
 );
 #-----------------------------Hive delete rows-------------------------------------#
-insert overwrite table movie_data_parquet 
-    select * from movie_data_parquet 
+insert overwrite table hive_data 
+    select * from hive_data
     where user_id <> 1
 ;
 
@@ -98,6 +101,7 @@ LOAD DATA LOCAL INFILE '/data/u.occupation' INTO TABLE u_occupation;
 
 rows---------------------------------------------------#
 delete from table where column = 0;
+delete from movielens_db.hive_data  where column = 0;
 
 #Try to pass tables
 
@@ -108,10 +112,13 @@ sqoop import --connect jdbc:mysql://localhost/cliffsql_db --username root -P --t
 #Import to hive table 
 sqoop import --connect jdbc:mysql://localhost/cliffsql_db --username maria_dev --password maria_dev --table hive_data  --hive-import  --hive-table movielens_db.hive_data -m 1
 
+#Export to mysql
+sqoop export  --connect jdbc:mysql://localhost/cliffsql_db --username maria_dev --password maria_dev --table hive_data --export-dir /user/hive/hive_data --m 1
+
 #Run check 
 hive
 use movielens_db;
-select * from hive_data limit 10;
+select * from movielens_db.hive_data limit 10;
 
 #Remove data if failure
 hdfs dfs -rm -r /user/maria_dev/hive_data
