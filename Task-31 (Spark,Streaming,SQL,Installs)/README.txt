@@ -1,13 +1,14 @@
 TODO:
 -- Spark 
 •         RDD lineage - Completed
-•         checkpointing (in-progress)
-•         Cache/persist
-•         Broadcast vars
-•         Accumulators
-•         implicits
+•         checkpointing Completed
+•         Cache/persist Completed
+•         Broadcast varsCompleted
+•         Accumulators  Completed
+•         implicits     Completed
+
 -- Spark streaming
-•         windowing
+•         windowing (in-progress)
 •         offset management
 •         Kstreams
 •         Dstreams
@@ -15,8 +16,8 @@ TODO:
 •         joins + self, cross
 •         window functions
 -- Installs
-•         install Hive 2.3
-•         install Hbase 2.2
-•         install Cassandra 2.1
-•         install Mongodb 4.0
+•         install Hive 2.3 Completed
+•         install Hbase 2.2 Completed
+•         install Cassandra 2.1 Completed
+•         install Mongodb 4.0 
 WITH CODE
