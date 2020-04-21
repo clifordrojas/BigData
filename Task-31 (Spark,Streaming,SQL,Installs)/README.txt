@@ -1,7 +1,7 @@
 TODO:
 -- Spark 
-•         RDD lineage (in-progress)
-•         checkpointing
+•         RDD lineage - Completed
+•         checkpointing (in-progress)
 •         Cache/persist
 •         Broadcast vars
 •         Accumulators
