@@ -35,7 +35,7 @@ object Kafka_to_SparkStreamingDirect {
 
 
     stream.foreachRDD { rdd =>
-      rdd.coalesce(1).saveAsTextFile("hdfs://localhost:9000/output/T24_result")
+      rdd.coalesce(1).saveAsTextFile("/home/desktop/Desktop/RddCP")
     }
     ssc.start()
     ssc.awaitTermination()
