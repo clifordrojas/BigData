@@ -8,10 +8,10 @@ TODO:
 •         implicits     Completed
 
 -- Spark streaming
-•         windowing (in-progress)
-•         offset management
-•         Kstreams
-•         Dstreams
+•         windowing  Completed
+•         offset management Completed
+•         Kstreams Completed
+•         Dstreams Completed
 -- SQL
 •         joins + self, cross
 •         window functions

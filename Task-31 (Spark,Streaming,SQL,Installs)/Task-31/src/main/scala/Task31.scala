@@ -44,7 +44,7 @@ import org.apache.spark
 
 
     //Create RDD CheckPoint
-    csv_make_small.checkpoint()
+//    csv_make_small.checkpoint()
     // After usage stop persisting - Avoid unnecessary data usage
     csv_make_small.unpersist()
     //Show RDD Lineage
