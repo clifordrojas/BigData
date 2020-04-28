@@ -1,99 +1,76 @@
 Scrum Notes
-Date: 4/10/2020
+Date: 4/29/2020
 CC:
-caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us, jeffery.alkire@enhanceit.us, weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
+caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us,weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
 
 #################################################################################################
 Summary of no/little progress:
-Alicja: Pipeline progress: No changes since yesterday. Tasks: Same as yesterday.
-Caleb: Caleb has interview at 230pm but no tech prep as of 830am.
-Cliford: Pipeline progress: No changes since yesterday.
-Jerry: Stuck on spark reading from S3.
-Miya: Task no changes since yesterday.
 #################################################################################################  
 
-#------------------------------------------------------------------#
 Alicja
-
+4/28/20
 Scheduled Interview:
-	8am capital one glider
+   10am call with GSquared
+   1pm TP
+   2pm TP
+   4:30 call with Apple Recruiter
 Pipeline Progress (TRAINING/CONTRACT):
-	STAGE: ingestion
-	CURRENT PROGRESS: automate API call after session expired
+    created data pipeline visualization for past projects
+    reviewed profile
+    spark consumer and json parsing
 Tasks:
 	CURRENT TASK: pipeline
 	NONE-COMPLETE: 31+
 Studying:
 	reading hadoop book
 Time:
-    4 hours Highmark, Capital One and Deloitte 
-	4 hrs tasks, pipeline
-#------------------------------------------------------------------#
+    3 hours IV notes
+    1 hour admin
+    3 hour task and study
+-----------------------------------------------------------------
 Caleb
-Scheduled Interview:
-4/10 RF AAA - IV@2:30pm-4:30pm 
-Pipeline Progress (TRAINING/CONTRACT):
-	2nd piplineSTAGE: aws debug kinesis stream (debuging credential errors)
- 	1st pipe: switch to kstream
-
-CURRENT PROGRESS: redoing kstream, to stream to database  
-	CURRENT TASK: Task 32 read Stream to databases  
-	NONE-COMPLETE: 33,34,35
-Studying:
-	dynamodb
-Time:
-   1 hr admin
-   1 hr Nokia -TP 8:00am
-   1 hr Nokia - IV@11:30am
-   1 hr lunch
-   1 hr AAA TP
-   1 AAA- IV@2pm
-   1 Fannie Mae - TP@4pm
-   1 research how to get rid of crediendial error
-
-Interview prep
-N/a interview
-#------------------------------------------------------------------#
+-----------------------------------------------------------------
 Cliford
+4/28
 Scheduled Interview:
-	10:00 am - R2 - TP - Slower
-	3:00 pm - R2 - IV - Slower
-
+	NONE
 Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
-	CURRENT PROGRESS: Working on Tasks instead of pipeline to get more understanding and experience of Hbase,Cassandra,MongoDB.
+	CURRENT PROGRESS: Should be integrating with Task-31.
 Tasks:
-	CURRENT TASK: Task 33: Hbase Install complete, column,row inserted(Need to understand put for hbase: Row Col Key)
-	NONE-COMPLETE: 30,31,33,35
+	CURRENT TASK: Task 31: Completed KStream/DStream, Window func. Left: Offset management.
+	NONE-COMPLETE: 31,33,35
 Studying:
-	S3, DynamoDB, RedShift, Parquet V Orc, 
+	AWS certification.
 Time:
-	8-10: Admin:Scrum Updates, Email Checks, Schedule update.
-	10-12:20: Teck Prep, Hbase (insterted Data), Q & A Rescheduled 2pm, Caleb interivew
-	12:20-13:20:Lunch
-	1320-15: AWS Tools (S3,DynamoDB,Redshift) Parquet vs orc, admin
-	15-17: FINRA Assesment, Behavrioural test for Highmark Health. 
-	21-2130: Caleb's Inverview
-#------------------------------------------------------------------#
-Jerry
+    2.5 Hrs Studying 
+    2.0 Hrs Coding (Task-31)
+    1 hr tp
+    1 hr review of interview q's
+    1 hr QA
+    1 Hr Admin
+-----------------------------------------------------------------
+Jerry Hsieh
 Scheduled Interview:
 	none
 Pipeline Progress (TRAINING/CONTRACT):
-	STAGE: spark read s3 file
-	CURRENT PROGRESS: AWS4-HMAC-SHA256 version issue, same as move data from hdfs to s3
-    Time: 6 hours on troubleshooting spark reading s3 file
+	STAGE: automate every step with airflow
+	CURRENT PROGRESS: creating bash scripts for each step
+    Time: 3 hours on postgresdb
+          3 hours on sql practice
+          1 hour on talking to the vendor
 Tasks:
 	CURRENT TASK: none
-	NONE-COMPLETE: Task #33 - 35
-Studying:
-	aws
-#------------------------------------------------------------------#
-Miya
-Scheduled  assessment at 9am
+-----------------------------------------------------------------
+Miya 4/28
+Scheduled Interview: NONE
 Tasks:
-	CURRENT TASK: work on code for spark Dstream, offset, window .. 
-	NONE-COMPLETE: T31,T33-T35
+	CURRENT TASK: Task 34
+	NONE-COMPLETE: 33,35
+Studying:
+	interview Qs, cassandra, profile
 Time:
-    -3.5hrs listen in interview and take note, listen in vendor calls,TP and call vendors.
-    -2h assessment coding challenge and finished that.
-    -1.5 continue work on Dstream wordcount
+	1 Hrs Admin, waiting
+    1 Hr meeting, interview Qs
+    4 Hr work on pipelines
+    2 installed cassandra & learn cassandra
