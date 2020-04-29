@@ -3,20 +3,11 @@ Date: 4/29/2020
 CC:
 caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us,weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
 
-#################################################################################################
-Summary of no/little progress:
-#################################################################################################  
-
 Alicja
-4/28/20
 Scheduled Interview:
-   10am call with GSquared
-   1pm TP
-   2pm TP
-   4:30 call with Apple Recruiter
+   8:30am call with Big Cloud
+   12pm call with GSquared
 Pipeline Progress (TRAINING/CONTRACT):
-    created data pipeline visualization for past projects
-    reviewed profile
     spark consumer and json parsing
 Tasks:
 	CURRENT TASK: pipeline
@@ -31,24 +22,21 @@ Time:
 Caleb
 -----------------------------------------------------------------
 Cliford
-4/28
 Scheduled Interview:
 	NONE
 Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
-	CURRENT PROGRESS: Should be integrating with Task-31.
+	CURRENT PROGRESS: pending.
 Tasks:
-	CURRENT TASK: Task 31: Completed KStream/DStream, Window func. Left: Offset management.
-	NONE-COMPLETE: 31,33,35
+	CURRENT TASK: Task 33: Started: Install Complete
+	NONE-COMPLETE: 33
 Studying:
 	AWS certification.
 Time:
-    2.5 Hrs Studying 
-    2.0 Hrs Coding (Task-31)
-    1 hr tp
-    1 hr review of interview q's
+    2 Hrs Studying 
+    2 Hrs Coding (Task-31)
     1 hr QA
-    1 Hr Admin
+    2 Hr Admin
 -----------------------------------------------------------------
 Jerry Hsieh
 Scheduled Interview:
@@ -56,21 +44,21 @@ Scheduled Interview:
 Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: automate every step with airflow
 	CURRENT PROGRESS: creating bash scripts for each step
-    Time: 3 hours on postgresdb
-          3 hours on sql practice
-          1 hour on talking to the vendor
+    Time: 3 hours on airflow
+          3 hours on spark-hive spark job
+          1 hour on some skype calls
 Tasks:
 	CURRENT TASK: none
 -----------------------------------------------------------------
-Miya 4/28
-Scheduled Interview: NONE
+Miya 
+Scheduled Interview: TP @ 2:00
 Tasks:
 	CURRENT TASK: Task 34
 	NONE-COMPLETE: 33,35
 Studying:
-	interview Qs, cassandra, profile
+	interview Qs, cassandra, profile pipeline
 Time:
-	1 Hrs Admin, waiting
-    1 Hr meeting, interview Qs
-    4 Hr work on pipelines
-    2 installed cassandra & learn cassandra
+	3 Hrs Admin, waiting calls
+    1 Hrs listen in calls
+    2 Hr meeting, interview Qs
+    2 Hr work on pipelines
