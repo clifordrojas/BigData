@@ -5,8 +5,7 @@ caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us,weiyao.ma@enhanceit.us, ali
 
 Alicja
 Scheduled Interview:
-   8:30am call with Big Cloud
-   12pm call with GSquared
+   2pm JPMC
 Pipeline Progress (TRAINING/CONTRACT):
     spark consumer and json parsing
 Tasks:
@@ -34,31 +33,32 @@ Studying:
 	AWS certification.
 Time:
     2 Hrs Studying 
-    2 Hrs Coding (Task-31)
+    2 Hrs Taking Notes
+    1 hr Learn SQL practice qs
     1 hr QA
-    2 Hr Admin
+    1.5 Hrs Admin
 -----------------------------------------------------------------
 Jerry Hsieh
 Scheduled Interview:
 	none
 Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: automate every step with airflow
-	CURRENT PROGRESS: creating bash scripts for each step
+	CURRENT PROGRESS: run dags
     Time: 3 hours on airflow
-          3 hours on spark-hive spark job
-          1 hour on some skype calls
+          2 hours on learnsql
+          2 hour on some calls
 Tasks:
 	CURRENT TASK: none
 -----------------------------------------------------------------
 Miya 
-Scheduled Interview: TP @ 2:00
+Scheduled Interview: call @ 10AM
 Tasks:
 	CURRENT TASK: Task 34
 	NONE-COMPLETE: 33,35
 Studying:
 	interview Qs, cassandra, profile pipeline
 Time:
-	3 Hrs Admin, waiting calls
+	2 Hrs Admin, waiting calls
     1 Hrs listen in calls
-    2 Hr meeting, interview Qs
-    2 Hr work on pipelines
+    1 Hr meeting, interview Qs
+    4 Hr work on pipelines
