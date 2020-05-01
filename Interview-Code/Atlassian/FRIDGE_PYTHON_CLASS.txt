@@ -1,0 +1,142 @@
+class Item:
+    """
+    This is an item class that can be used to put in the refrigerator. 
+    The constructor takes 2 parameters 'name' and int 'size'
+    """"
+    
+    def __init__(self, name : str, size: int):
+        """
+        Class constructor that takes two parameters name (string) and size (int).
+        """
+        self._name = name
+        self._size = size
+        
+    def get_size(self):
+        """
+        Gets the size of the item.
+        """
+        return self._size
+        
+    def get_name(self):
+        """
+        Gets the name of the item.
+        """
+        return self._name
+    
+    def __str__(self):
+        return get_name() +"\t"+ str(get_size())
+
+class Refrigerator:
+    """
+    Params: None
+    The refrigerator class accepts item types to put on the shelves. There are three sizes (catagories) for 
+    the regrigerator type: small, medium, large. The items will be placed in each shelf depending on the item's
+    size. Smaller items will be placed in the small shelf. The rest will be placed accordingly as well. 
+    """
+    def __init__(self,small: int,medium: int,large: int):
+        """
+        This constructor takes 3 params. Each param is to specify how many shelves the Refrigerator has.
+        Params: Small (int), medium(int), large(int)
+        """
+        
+        #Individual Shelves
+        self.shelf_small = []
+        self.shelf_medium = []
+        self.shelf_large = []
+        
+        
+        
+    def put(self, item):
+        """
+        This method will place items into the refrigerator in one of the 3 shelves: small, medium, or large.
+        """
+            
+        
+        if item.get_size() <= 5:
+            result = check_fridge("small")
+            if item.get_size() > result:
+                return "Item is too large"
+            else:
+                return self.shelf_small.append(item)
+                
+        elif item.get_size() > 5 and item.get_size() <=10:
+            result = check_fridge("medium")
+            if item.get_size() > result:
+                return "Item is too large"
+            else:
+                return self.shelf_medium.append(item)
+    
+        elif item.get_size() > 10:
+            result = check_fridge("large")
+            if item.get_size() > result:
+                return "Item is too large"
+            else:
+                return self.shelf_large.append(item)
+    
+    
+    def get(self, item):
+        """
+        Gets the an item from the shelve based on it's name (string) and removes the item from the shelve.
+        Returns: Item Object from the shelve
+        """
+        
+        #Handler for returning the item and removing the item from the shelf. 
+        if self.shelf_small.contains(item):
+            index_small = self.shelf_small.index(self.shelf_small.contains(item))
+            return self.shelf_small.pop(index_small)
+             
+            
+        elif self.shelf_medium.contains(item):
+            index_medium = self.shelf_medium.index(self.shelf_medium.contains(item))
+            return self.shelf_medium.pop(index_medium)
+             
+        
+        elif self.shelf_large.contains(item):
+            index_large = self.shelf_large.index(self.shelf_large.contains(item))
+            return self.shelf_small.pop(index_large) 
+            
+            
+        else:
+            return f"the item you are looking for {item} is not in the fridge"
+        
+        
+    def check_fridge(self,shelve):
+        #Local Variables to compute everytime the check_fridge method is called.
+        shelf_small = 0
+        shelf_medium = 0
+        shelf_large = 0
+        
+        #Compute the sizes of shelves
+        for items in self.shelf_small:
+            shelve_small += items.get_size()
+        for items in self.shelf_medium:
+            shelf_medium += items.get_size()
+        for items in self.shelf_large:
+            shelf_large += items
+        
+        #Check 
+        if shelve == "small":
+            if shelf_small >=5:
+                return "Full"
+            else:
+                return shelf_small
+        
+        elif shelve == "medium":
+            if shelf_medium >= 10:
+                return "Full"
+            else:
+                return shelf_medium
+        
+        elif shelve == "large":
+            if shelf_large >= 20:
+                return "Full"
+            else:
+                return shelf_large
+        else:
+            return "Not a valid option"
+            
+        
+    def is_not_empty(self, shelf):
+        if len(shelf) > 1:
+            return True
+            

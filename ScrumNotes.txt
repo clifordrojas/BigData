@@ -1,24 +1,23 @@
 Scrum Notes
-Date: 4/29/2020
+Date: 5/1/2020
 CC:
 caleb.davis@enhanceit.us, cliford.rojas@enhanceit.us,weiyao.ma@enhanceit.us, alicja.ligas@enhanceit.us,jerry.hsieh@enhanceit.us
 
 Alicja
 Scheduled Interview:
-   2pm JPMC
+   9am TP
+   2:30pm Norfolk
 Pipeline Progress (TRAINING/CONTRACT):
     spark consumer and json parsing
 Tasks:
 	CURRENT TASK: pipeline
 	NONE-COMPLETE: 31+
 Studying:
-	reading hadoop book
+	Cloudera
 Time:
     3 hours IV notes
     1 hour admin
     3 hour task and study
------------------------------------------------------------------
-Caleb
 -----------------------------------------------------------------
 Cliford
 Scheduled Interview:
@@ -27,14 +26,13 @@ Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
 	CURRENT PROGRESS: pending.
 Tasks:
-	CURRENT TASK: Task 33: Started: Install Complete
+	CURRENT TASK: Task 33: no progress.Worked on SQL. 
 	NONE-COMPLETE: 33
 Studying:
 	AWS certification.
 Time:
-    2 Hrs Studying 
-    2 Hrs Taking Notes
-    1 hr Learn SQL practice qs
+    2 Hrs Studying AWS
+    3 hr SQL Practice playground
     1 hr QA
     1.5 Hrs Admin
 -----------------------------------------------------------------
@@ -42,23 +40,24 @@ Jerry Hsieh
 Scheduled Interview:
 	none
 Pipeline Progress (TRAINING/CONTRACT):
-	STAGE: automate every step with airflow
-	CURRENT PROGRESS: run dags
-    Time: 3 hours on airflow
-          2 hours on learnsql
-          2 hour on some calls
+	STAGE: spark submit on emr
+	CURRENT PROGRESS: add-step
+    Time: 2 hours on airflow
+          4 hours on aws add step
+          1 hour on some calls
 Tasks:
 	CURRENT TASK: none
 -----------------------------------------------------------------
 Miya 
-Scheduled Interview: call @ 10AM
+Scheduled Interview:NONE
 Tasks:
 	CURRENT TASK: Task 34
 	NONE-COMPLETE: 33,35
 Studying:
 	interview Qs, cassandra, profile pipeline
 Time:
-	2 Hrs Admin, waiting calls
-    1 Hrs listen in calls
+	1.5 Hrs Admin, waiting calls
+    1 Hrs listen in calls, take note
     1 Hr meeting, interview Qs
-    4 Hr work on pipelines
+    2.5 Hr work on pipelines
+    2 Hr work on task

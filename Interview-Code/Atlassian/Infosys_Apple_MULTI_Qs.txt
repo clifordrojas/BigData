@@ -1,0 +1,290 @@
+1) Difference between List and Set data structures?
+
+-Sets unlike list do not contain indexes and are unorganized. Sets do not contain duplicates. Sets have a better lookup time because of hashing alogrithms. Sets do not support slicing, unlike a list.
+List have better performance for iterations. 
+
+2) Why is String immutable (or final) in Java?
+-Java Strings are immutable because allowing for String Pooling which saves space as the will refer to the same string. 
+Immutability is safer for multithreading as a string can be shared amongst all different threads, making them
+thread-safe.
+
+3) What does “final” keyword achieve for a class, method or variable?
+-The Final Keyword in Java will make it such that the class,method,or variable cannot be overridden
+or hidden by a subclass. This is to prevent unexpected behavior or modifying a method needed for the class.
+It also makes it where the method is loaded at runtime. 
+
+4) When would you have a private constructor in a class?
+
+- A private constructor class can be used when you don't want multiple object be able to constructed.
+ 
+5) What does a “synchronized” method or code block achieve?
+-Synchronized methods achieve the prevention or thread interference and memory consistency errors. This can 
+be done by handling threads or applying a locking/unlocking with "synchronized" code block. Making the method 
+thread-safe.
+
+6) Why does a “wait()” and “notify()” need to be within a “synchronized” block? How does these calls help in inter thread communication?
+-"wait()" makes the current thread stop until another thread calls "notify" on the object it waits on.
+This ensures that only one thread will enter the block.
+
+7) Write a function to remove duplicates from an unsorted linked list?
+//Java 8
+void remove_duplicates() {
+     Node ptr1 = null, ptr2 = null, dup = null;
+     ptr1 = head;
+     
+/* Pick elements one by one */
+
+     while (ptr1 != null && ptr1.next != null) {
+         ptr2 = ptr1;
+
+         
+/* Compare the picked element with rest
+             of the elements */
+
+         while (ptr2.next != null) {
+
+             
+/* If duplicate then delete it */
+
+             if (ptr1.data == ptr2.next.data) {
+
+                 
+/* sequence of steps is important here */
+
+                 dup = ptr2.next;
+                 ptr2.next = ptr2.next.next;
+                 System.gc();
+}
+
+8)
+
+import json
+import requests
+
+def removeDuplicates(list):
+    a = []
+    for words in list:
+        if words not in a:
+            a.append(words)
+        else:
+            pass
+    return a
+
+
+
+response = requests.get("http://mysafeinfo.com/api/data?list=englishmonarchs&format=json")
+data = json.loads(response.text)
+new_record = {}
+
+counter = 0
+
+data.append({'ID': 5, 'Name': ["Edwy","Edwy","Edwy"], 'Country': 'United Kingdom', 'House': 'House of Wessex', 'Reign': '955-959'})
+
+for x in data:
+
+    if str(type(x["Name"])) == "<class 'str'>":
+        new_record.update({"cty" + str(counter):{"hse" + str(counter): [x["Name"]]}})
+    else:
+        new_record.update({"cty" + str(counter):{"hse" + str(counter):removeDuplicates(x["Name"])}})
+    counter += 1
+
+print("The answer is below: ")
+print(new_record)
+
+9)
+def map_dict_arr(dictionary, list):
+    dictionary_final = []
+    if len(dictionary) == len(list):
+        pass
+    elif len(dictionary) > len(list):
+        pass
+    elif len(dictionary) < len(list):
+
+        dictionary[0]["name"] = list[0][11]
+
+        for x in range(len(list)):
+            temp = {}
+            temp.update({"f_name":list[x][11]})
+            temp.update({"gender":list[x][9]})
+            temp.update({"ethnicity":list[x][10]})
+            temp.update({"year_birth":list[x][8]})
+            temp.update({"rank":list[x][12]})
+            temp.update({"count":list[x][13]})
+
+            #['id', 'name', 'dataTypeName', 'description', 'fieldName', 'position', 'renderTypeName', 'tableColumnId', 'width', 'cachedContents', 'format']
+            # try:
+            #     temp.update({"count":dictionary[x]["cachedContents"]["average"]})#["cachedContents"]})
+            # except:
+            #     temp.update({"count": 0})
+            dictionary_final.append(temp)
+
+
+        # print(dictionary["name"] ,list[0][11])
+        # print("\t",list[11])
+        # print(dictionary["name"] ,"\t")
+
+    else:
+        pass
+    return dictionary_final
+
+
+
+
+response = requests.get("https://data.cityofnewyork.us/api/views/25th-nujf/rows.json")
+data = json.loads(response.text)
+
+
+#Pull Only ["Child's First Name", "Gender", "Ethnicity", "Year of Birth", "Rank", "Count"] only the years 2012-2014
+#"Child's First Name" and then "Ethnicity"- and provides the sum of "Count" for each combination.
+
+# print(data['meta']['view']['columns'])
+# print(data["data"][0])
+#
+# print(len(data['meta']['view']['columns']))
+# print(len(data["data"][0]))
+import csv
+counter = 2
+for x in data['meta']['view']['columns']:
+    if counter == 0:
+        break
+    pass
+    counter -= 1
+
+counter = 2
+for x in data["data"]:
+    if counter == 0:
+        break
+
+    counter -= 1
+
+x = map_dict_arr(data['meta']['view']['columns'],data["data"])
+new_x = []
+for y in x:
+    if int(y["year_birth"]) >= 2012 and  int(y["year_birth"]) <= 2014:
+        new_x.append(y)
+
+
+
+
+
+with open("infosys_apple_json.json","w") as f:
+    for x in sorted(new_x, key=lambda line: line["ethnicity"]):
+        json.dump(x, f)
+
+outputFile = open("infosys_apple_csv.csv", 'w')
+
+f = csv.writer(outputFile)
+f.writerow(new_x[0].keys())
+for x in sorted(new_x, key=lambda line: line["ethnicity"]):
+    f.writerow(x.values())
+
+Scala Questions:
+1. Difference between var, val, lazy val and def?
+	a) Val is immutable, it is evaluated when defined.
+	b) var is mutable, it is evaluated when defined.
+	c) Lazy val is evaluated when it is accessed for the first time.
+	d) def is defined on call.
+	
+- Val,var, lazy val are used to create variables and def is used to create methods/functions.
+
+2) Write a small scala function to retrieve value of a token:
+
+def getValue(tokenString:String, valueString:String, key:String):String
+Input is 2 strings token :
+tokenString : "key1, key2, key3, key4"
+valueString : "val1, val2, val3, val4”
+key : “key2"
+  
+def getValue(tokenString:String, valueString:String, key:String):String ={
+    val keys = tokenString.split(",")
+    val values = valueString.split(",")
+    val map =  collection.mutable.Map[String, String]()
+
+    for (a <- 0 to keys.length-1) {
+      println(keys(a).trim,values(a).trim)
+      map.addOne(keys(a).trim,values(a).trim)
+    }
+    map(key.trim)
+
+
+  }
+3) What is the difference between persist() and cache()
+	a) They are optimization technique. cache() stores in-memory vs persist() allows you to 
+	choose where to store such as DISK,MEMORY and DISK, and Memory only.
+
+4) Explain the difference between Spark SQL and Hive
+-Hive provides schema flexibility, portioning and bucketing the tables whereas as Spark SQL performs SQL querying it is only possible to read data from existing Hive installation.
+-Row-level updates and real-time OLTP querying is not possible using Apache Hive whereas row-level updates and real-time online transaction processing is possible using Spark SQL.
+-Hive, like SQL statements and queries, supports UNION type whereas Spark SQL is incapable of supporting UNION type.
+
+5) Explain Partitions and SparkContext?
+- In spark partitioning can be used to optimize a spark job by splitting it into multiple parts. These parts allow the data to be
+partitioned across various nodes allowing for better parallelism.
+-Spark Context has various parts but it essentially allows for the configuration, services, and access to data that will
+will best serve the driver program. 
+
+6) Write a Scala function which takes a list and a target number and returns combination of numbers whose sum to the target number
+object FindPairs {
+  def main(args: Array[String]): Unit = {
+    println(listSumTarget(15, List(1, 2, 5, 10)) mkString "\n")
+
+  }
+
+  def listSumTarget(targetNumber: Int, numsListToCheck: List[Int]): List[List[Int]] = {
+
+    def functionalAddition(x: (Int, List[List[Int]]), y: (Int, List[List[Int]])): (Int, List[List[Int]]) = {
+      (x._1 + y._1, x._2 ::: y._2)
+    }
+
+    def sumCombinations(resultAcc: List[List[Int]], sumAcc: List[Int], total: Int, numbers: List[Int]): (Int, List[List[Int]]) = {
+      //Check
+      if (numbers.isEmpty || total < 0) {
+        
+        (0, resultAcc)
+        
+      } else if (total == 0) {
+        
+        (1, sumAcc :: resultAcc)
+        
+      } else {
+        //Add
+        functionalAddition(sumCombinations(resultAcc, sumAcc, total, numbers.tail), sumCombinations(resultAcc, numbers.head :: sumAcc, total - numbers.head, numbers))
+      }
+      
+    }
+
+    sumCombinations(Nil, Nil, targetNumber, numsListToCheck.sortWith(_ > _))._2
+  }
+
+
+}
+
+
+7) There are 2 lists; one with birth year, other one with death year. Write Scala program to find out which year people lived the max.
+import scala.language.postfixOps
+object peopleLiveMax {
+  def main(args: Array[String]): Unit = {
+    //There are 2 lists; one with birth year, other one with death year. Write Scala program to find out which year
+    // people lived the max.
+    val birthYear = List(1990, 1991, 1992, 2001, 1980, 1982, 1981)
+    val deathYear = List(2010, 2011, 2012, 2013, 2014, 2015, 2016)
+
+    val mappedValues = (birthYear zip deathYear) toMap
+
+    var oldestLiving= (0,0)
+
+    for (x <- mappedValues){
+      if ((x._2 - x._1) > (oldestLiving._2 - oldestLiving._1)){
+        oldestLiving = (x._2,x._1)
+      }
+
+    }
+    println("The year people lived the most is: " + oldestLiving._2.toString)
+    print("They lived: "+ (math.abs(oldestLiving._2 - oldestLiving._1)))
+
+  }
+
+}
+
+8) How do you remove elements with a key present in the other RDD? 
+- subtractByKey () can be used and would be very more efficient than using a join.
