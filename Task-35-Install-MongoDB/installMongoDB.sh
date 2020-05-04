@@ -21,5 +21,8 @@ source .bash_profile
 cd $MONGODB_HOME 
 cd ..
 sudo chmod 777 -R mongodb
+sudo mkdir -p /data/db
+cd /data
+chmod 777 -R /data
 
 echo "MongoDB Install Completed"
