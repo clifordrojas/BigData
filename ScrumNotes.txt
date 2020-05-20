@@ -26,13 +26,14 @@ Pipeline Progress (TRAINING/CONTRACT):
 	STAGE: Ingestion
 	CURRENT PROGRESS: pending.
 Tasks:
-	CURRENT TASK: Task 33: no progress.Worked on SQL. 
+	CURRENT TASK: Task 33: no progress.
 	NONE-COMPLETE: 33
 Studying:
 	AWS certification.
 Time:
     2 Hrs Studying AWS
-    3 hr SQL Practice playground
+    2 hr SQL Practice playground
+    1 hr Re-reading notes (Spark,Kafka,Flume,Cassandra)
     1 hr QA
     1.5 Hrs Admin
 -----------------------------------------------------------------
