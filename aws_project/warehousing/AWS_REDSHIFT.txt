@@ -1,0 +1,8 @@
+CREATE IAM ROLE:
+Redshift requires access to be able to communicate with aws services.
+
+Create Cluster:
+1) Default settings
+2) Database name: DbName parameter must be lowercase, begin with a letter, contain only alphanumeric characters, underscore ('_'), plus sign ('+'), dot ('.'), at ('@'), or hyphen ('-'), and be less than 64 characters.
+2) Attach IAM Role created about 
+3) Finish Creating Redshift cluster

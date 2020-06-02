@@ -32,6 +32,7 @@ ss = SparkSession(sc)
 file = ss.read.json("s3n://AKIATI3JA3WDQ5MR5MEZ:B5XwbsrwzLCJegjWbRa4TKGro6ck6nUgxluTf0js@2020clifordrojas/All_the_Jokes.txt")
 run_sql = file.createOrReplaceTempView("funny_table")
 query = sqlContext.sql("Select categories,created_at,id, value from funny_table")
+query.schema
 query.show()
 query.write.partitionBy("id","value").parquet("s3n://AKIATI3JA3WDQ5MR5MEZ:B5XwbsrwzLCJegjWbRa4TKGro6ck6nUgxluTf0js@2020clifordrojas/output")
 
