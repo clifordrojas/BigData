@@ -18,8 +18,8 @@ conf = (SparkConf()
         .set("spark.executor.memory", "2g"))
 # Settting up the configuration to access Amazon S3
 sc = SparkContext(conf=conf)
-sc._jsc.hadoopConfiguration().set("fs.s3.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
-sc._jsc.hadoopConfiguration().set("fs.s3n.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
+#sc._jsc.hadoopConfiguration().set("fs.s3.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
+#sc._jsc.hadoopConfiguration().set("fs.s3n.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
 
 
 # Set log level to off for faster performance of the terminal
@@ -29,10 +29,10 @@ sqlContext = SQLContext(sc)
 # Spark Session to create dataframes and use the read.Json method after proper configuration of Amazon S3
 ss = SparkSession(sc)
 
-file = ss.read.json("s3n://AKIATI3JA3WDQ5MR5MEZ:B5XwbsrwzLCJegjWbRa4TKGro6ck6nUgxluTf0js@2020clifordrojas/All_the_Jokes.txt")
+file = ss.read.json("s3n://2020clifordrojas/All_the_Jokes.txt")
 run_sql = file.createOrReplaceTempView("funny_table")
 query = sqlContext.sql("Select categories,created_at,id, value from funny_table")
 query.schema
 query.show()
-query.write.partitionBy("id","value").parquet("s3n://AKIATI3JA3WDQ5MR5MEZ:B5XwbsrwzLCJegjWbRa4TKGro6ck6nUgxluTf0js@2020clifordrojas/output")
+query.write.partitionBy("id").parquet("s3n://2020clifordrojas/output")
 
