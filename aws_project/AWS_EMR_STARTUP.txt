@@ -40,8 +40,8 @@ Kinesis
 Configure aws by download the msi file
 run command 
 aws configure
-AWS Access Key ID [None]: AKIATI3JA3WDQ5MR5MEZ
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: 
+AWS Secret Access Key [None]: 
 Default region name [None]: us-east-1
 Default output format [None]: json
 
